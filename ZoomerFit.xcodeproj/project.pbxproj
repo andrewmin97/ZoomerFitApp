@@ -26,6 +26,12 @@
 		06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */; };
 		06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9F24562961009C5A26 /* christianfleenor.jpg */; };
 		06741DA224562966009C5A26 /* athleanx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741DA124562966009C5A26 /* athleanx.jpg */; };
+		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
+		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
+		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
+		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
+		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
+		D14F3EC86A05A1B40501B85B /* Pods_ZoomerFitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,16 @@
 		06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ebenezer samuel.jpeg"; sourceTree = "<group>"; };
 		06741D9F24562961009C5A26 /* christianfleenor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christianfleenor.jpg; sourceTree = "<group>"; };
 		06741DA124562966009C5A26 /* athleanx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = athleanx.jpg; sourceTree = "<group>"; };
+		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
+		399199F324567B330098A184 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F83B03E72A4AC36B4E6EC49 /* Pods-ZoomerFitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.release.xcconfig"; sourceTree = "<group>"; };
+		65729B0FC7AC2DCBDFD60F67 /* Pods-ZoomerFitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969D14A8D6757899774ECAC /* Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDB3A0D1DE123DC0BA2C66D3 /* Pods-ZoomerFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14F3EC86A05A1B40501B85B /* Pods_ZoomerFitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +124,8 @@
 				06741D7324562870009C5A26 /* ZoomerFitTests */,
 				06741D7E24562870009C5A26 /* ZoomerFitUITests */,
 				06741D5B2456286B009C5A26 /* Products */,
+				15C92916FD34AFCED9FCFD70 /* Pods */,
+				5FBE7B61C3EA6DA286868CC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +142,7 @@
 		06741D5C2456286B009C5A26 /* ZoomerFit */ = {
 			isa = PBXGroup;
 			children = (
+				399199F324567B330098A184 /* GoogleService-Info.plist */,
 				06741D5D2456286B009C5A26 /* AppDelegate.swift */,
 				06741D5F2456286B009C5A26 /* SceneDelegate.swift */,
 				06741D612456286B009C5A26 /* ViewController.swift */,
@@ -161,6 +183,30 @@
 			path = ZoomerFitUITests;
 			sourceTree = "<group>";
 		};
+		15C92916FD34AFCED9FCFD70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */,
+				EDB3A0D1DE123DC0BA2C66D3 /* Pods-ZoomerFit.release.xcconfig */,
+				E969D14A8D6757899774ECAC /* Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig */,
+				25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */,
+				65729B0FC7AC2DCBDFD60F67 /* Pods-ZoomerFitTests.debug.xcconfig */,
+				5F83B03E72A4AC36B4E6EC49 /* Pods-ZoomerFitTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FBE7B61C3EA6DA286868CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */,
+				88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */,
+				1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06741D8424562870009C5A26 /* Build configuration list for PBXNativeTarget "ZoomerFit" */;
 			buildPhases = (
+				1A21E85B7C7CECE1CCE391E1 /* [CP] Check Pods Manifest.lock */,
 				06741D562456286B009C5A26 /* Sources */,
 				06741D572456286B009C5A26 /* Frameworks */,
 				06741D582456286B009C5A26 /* Resources */,
+				92405B7585AE50273FD4C81F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06741D8724562870009C5A26 /* Build configuration list for PBXNativeTarget "ZoomerFitTests" */;
 			buildPhases = (
+				B416D2E15B5F2BA004ED4C93 /* [CP] Check Pods Manifest.lock */,
 				06741D6C24562870009C5A26 /* Sources */,
 				06741D6D24562870009C5A26 /* Frameworks */,
 				06741D6E24562870009C5A26 /* Resources */,
@@ -203,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06741D8A24562870009C5A26 /* Build configuration list for PBXNativeTarget "ZoomerFitUITests" */;
 			buildPhases = (
+				ACEBC2FC210D88B89A7AB3E9 /* [CP] Check Pods Manifest.lock */,
 				06741D7724562870009C5A26 /* Sources */,
 				06741D7824562870009C5A26 /* Frameworks */,
 				06741D7924562870009C5A26 /* Resources */,
+				8A90F46C9731CD020D7766B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +318,7 @@
 			files = (
 				06741D6A24562870009C5A26 /* LaunchScreen.storyboard in Resources */,
 				06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */,
+				399199F424567B330098A184 /* GoogleService-Info.plist in Resources */,
 				06741D9C2456295D009C5A26 /* clarkfir.jpg in Resources */,
 				06741D9D2456295D009C5A26 /* diamondcut.jpeg in Resources */,
 				06741D6724562870009C5A26 /* Assets.xcassets in Resources */,
@@ -286,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399199F524567B330098A184 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +346,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399199F624567B330098A184 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A21E85B7C7CECE1CCE391E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoomerFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A90F46C9731CD020D7766B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92405B7585AE50273FD4C81F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEBC2FC210D88B89A7AB3E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoomerFit-ZoomerFitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B416D2E15B5F2BA004ED4C93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoomerFitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06741D562456286B009C5A26 /* Sources */ = {
@@ -476,6 +633,7 @@
 		};
 		06741D8524562870009C5A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +651,7 @@
 		};
 		06741D8624562870009C5A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB3A0D1DE123DC0BA2C66D3 /* Pods-ZoomerFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +669,7 @@
 		};
 		06741D8824562870009C5A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65729B0FC7AC2DCBDFD60F67 /* Pods-ZoomerFitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +691,7 @@
 		};
 		06741D8924562870009C5A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F83B03E72A4AC36B4E6EC49 /* Pods-ZoomerFitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +713,7 @@
 		};
 		06741D8B24562870009C5A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969D14A8D6757899774ECAC /* Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +733,7 @@
 		};
 		06741D8C24562870009C5A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
