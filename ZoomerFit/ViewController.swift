@@ -8,11 +8,34 @@
 
 import UIKit
 import FirebaseUI
+import FBSDKLoginKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoginButtonDelegate {
+    func loginButton(_ loginButton: FBLoginButton!, didCompleteWith result: LoginManagerLoginResult!, error: Error!) {
+      if let error = error {
+        print(error.localizedDescription)
+        return
+      }
+      let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+    
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+    }
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let token = AccessToken.current,
+            !token.isExpired {
+            // User is logged in, do work such as go to next view controller.
+        }
+        let loginButton = FBLoginButton()
+        loginButton.delegate = self
+        loginButton.center = view.center
+        view.addSubview(loginButton)
+        loginButton.permissions = ["public_profile", "email"]
+
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +52,8 @@ class ViewController: UIViewController {
     }
     
 }
+
+
 
 extension ViewController: FUIAuthDelegate {
     

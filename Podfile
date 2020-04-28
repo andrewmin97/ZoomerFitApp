@@ -10,7 +10,12 @@ target 'ZoomerFit' do
 # add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
 pod 'FirebaseUI'
+
 # add pods for any other desired Firebase products
+
+#pod for facebook auth
+pod 'FBSDKLoginKit'
+    
 # https://firebase.google.com/docs/ios/setup#available-pods
 
   target 'ZoomerFitTests' do
