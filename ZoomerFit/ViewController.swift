@@ -7,14 +7,42 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var SignUp: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func SignUpPressed(_ sender: Any) {
+        let authUI = FUIAuth.defaultAuthUI()
+        
+        guard authUI != nil else {
+            return
+        }
+        authUI?.delegate = self
+        authUI?.providers = [FUIEmailAuth()]
+        let authViewController = authUI?.authViewController()
+        present(authViewController!, animated: true, completion: nil)
+    }
+    
 }
+
+extension ViewController: FUIAuthDelegate {
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        
+        guard error == nil else {
+            print(error?.localizedDescription as Any)
+            return
+        }
+        //authDataResult?.user.uid
+        performSegue(withIdentifier: "goHome", sender: self)
+        
+    }
+}
+
 

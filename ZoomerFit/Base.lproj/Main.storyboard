@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
         <!--View Controller-->
         <scene sceneID="0q8-eQ-HGM">
             <objects>
-                <viewController id="M0e-8z-4s9" customClass="ViewController" customModule="ZoomerFit_Mockup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M0e-8z-4s9" customClass="ViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A16-kN-m5I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,11 +59,18 @@
                                 <rect key="frame" x="229" y="647" width="134" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="sign up.png"/>
+                                <connections>
+                                    <action selector="SignUpPressed:" destination="M0e-8z-4s9" eventType="touchUpInside" id="f3U-1T-xjI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dd6-0j-yCT"/>
                     </view>
+                    <connections>
+                        <outlet property="SignUp" destination="CtI-2Y-MFH" id="0vp-wf-Vel"/>
+                        <segue destination="uIy-Sa-7Dd" kind="show" identifier="goHome" id="GGw-p6-YcB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqC-qL-N8D" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +81,7 @@
             <objects>
                 <viewController id="uIy-Sa-7Dd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csD-FT-nRv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXX-ba-lPw">
@@ -241,16 +248,17 @@ Rating: 5/5</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3ft-R9-7oN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LP8-rx-40s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gca-fL-WdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="800"/>
+            <point key="canvasLocation" x="435" y="128"/>
         </scene>
     </scenes>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFit.png" width="1206" height="690"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="athleanx.jpg" width="468" height="612"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
         <image name="clarkfir.jpg" width="425" height="531"/>
