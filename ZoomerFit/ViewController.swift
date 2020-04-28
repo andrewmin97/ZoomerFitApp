@@ -10,14 +10,13 @@ import UIKit
 import FirebaseUI
 
 class ViewController: UIViewController {
-    @IBOutlet weak var SignUp: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func SignUpPressed(_ sender: Any) {
+    @IBAction func SignInPressed(_ sender: Any) {
         let authUI = FUIAuth.defaultAuthUI()
         
         guard authUI != nil else {

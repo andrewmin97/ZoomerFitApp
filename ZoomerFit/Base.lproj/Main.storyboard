@@ -38,29 +38,12 @@
                                 <rect key="frame" x="64" y="178" width="286" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mse-LE-qVt">
-                                <rect key="frame" x="63" y="467" width="300" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zv-MG-6tp">
-                                <rect key="frame" x="63" y="534" width="300" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-F2-GU7">
-                                <rect key="frame" x="63" y="647" width="134" height="69"/>
+                                <rect key="frame" x="140" y="478" width="134" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="sign in.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtI-2Y-MFH">
-                                <rect key="frame" x="229" y="647" width="134" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="sign up.png"/>
                                 <connections>
-                                    <action selector="SignUpPressed:" destination="M0e-8z-4s9" eventType="touchUpInside" id="f3U-1T-xjI"/>
+                                    <action selector="SignInPressed:" destination="M0e-8z-4s9" eventType="touchUpInside" id="iIc-UD-ztL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,7 +51,6 @@
                         <viewLayoutGuide key="safeArea" id="dd6-0j-yCT"/>
                     </view>
                     <connections>
-                        <outlet property="SignUp" destination="CtI-2Y-MFH" id="0vp-wf-Vel"/>
                         <segue destination="uIy-Sa-7Dd" kind="show" identifier="goHome" id="GGw-p6-YcB"/>
                     </connections>
                 </viewController>
@@ -265,7 +247,6 @@ Rating: 5/5</string>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
         <image name="sign in.png" width="1619" height="776"/>
-        <image name="sign up.png" width="1619" height="776"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
 </document>
