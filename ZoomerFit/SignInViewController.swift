@@ -64,8 +64,8 @@ extension ViewController: FUIAuthDelegate {
             return
         }
         //authDataResult?.user.uid
-        performSegue(withIdentifier: "goHome", sender: self)
-        
+        //performSegue(withIdentifier: "goHome", sender: self)
+        performSegue(withIdentifier: "toTab", sender: self)
     }
 }
 

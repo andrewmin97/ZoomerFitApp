@@ -7,25 +7,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ANd-z0-1L8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owh-qs-biP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="iqY-zr-sNS" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uA0-BZ-RuF"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7mF-P4-Efv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ir2-S3-Ysf" kind="relationship" relationship="viewControllers" id="OjG-ln-d96"/>
+                        <segue destination="Evx-fI-6iW" kind="relationship" relationship="viewControllers" id="vFG-zQ-SEe"/>
+                        <segue destination="pqK-dF-Nfd" kind="relationship" relationship="viewControllers" id="qt5-dH-7pq"/>
+                        <segue destination="fkX-KI-sda" kind="relationship" relationship="viewControllers" id="eHJ-oT-ikL"/>
+                        <segue destination="zyO-J7-1VA" kind="relationship" relationship="viewControllers" id="lW2-op-q5t"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="128"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-4B-25I" userLabel="welcomeLabel">
+                                <rect key="frame" x="54" y="99" width="296" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEX-oZ-K4Q">
+                                <rect key="frame" x="20" y="797" width="374" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="g8W-Zb-Lvc"/>
+                                    <tabBarItem systemItem="search" id="2bb-sr-xaa"/>
+                                    <tabBarItem title="Profile" image="pencil" catalog="system" id="YAK-Lb-UFx"/>
+                                    <tabBarItem title="Item" id="AS6-TW-EQO"/>
+                                    <tabBarItem systemItem="more" id="ptF-oZ-Sz2"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dEX-oZ-K4Q" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QZ5-wQ-s3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEX-oZ-K4Q" secondAttribute="trailing" id="mwA-3T-Ka5"/>
+                            <constraint firstItem="dEX-oZ-K4Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vv3-dR-kLJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="435" y="750"/>
+            <point key="canvasLocation" x="-2094" y="128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0q8-eQ-HGM">
             <objects>
-                <viewController id="M0e-8z-4s9" customClass="ViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M0e-8z-4s9" customClass="ViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A16-kN-m5I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ZoomerFit.png" translatesAutoresizingMaskIntoConstraints="NO" id="bit-fB-HfC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ZoomerFitLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="bit-fB-HfC">
                                 <rect key="frame" x="64" y="178" width="286" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -52,11 +99,12 @@
                     </view>
                     <connections>
                         <segue destination="uIy-Sa-7Dd" kind="show" identifier="goHome" id="GGw-p6-YcB"/>
+                        <segue destination="iqY-zr-sNS" kind="show" identifier="toTab" id="fz4-NY-WEf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqC-qL-N8D" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="128"/>
+            <point key="canvasLocation" x="-707" y="128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j4E-ye-MJg">
@@ -169,7 +217,7 @@ Rating: 5/5</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clarkfir.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-Uc-f1D">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clarkfir.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-Uc-f1D" userLabel="clarkfit.jpg">
                                                     <rect key="frame" x="293" y="4" width="101" height="112"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -234,19 +282,105 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gca-fL-WdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="435" y="128"/>
+            <point key="canvasLocation" x="-46" y="128"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="qhf-NB-6Vu">
+            <objects>
+                <viewController id="Ir2-S3-Ysf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suM-Jr-nCr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dcC-KQ-uJv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="FPC-v1-9hY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGh-Lk-OQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2799" y="935"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="3En-F1-Eom">
+            <objects>
+                <viewController id="Evx-fI-6iW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJc-5N-PBm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="U6c-yg-Ul9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="mQN-kS-bVy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuP-oR-GzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2093" y="935"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="nAW-Vx-pCd">
+            <objects>
+                <viewController id="pqK-dF-Nfd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1k4-1a-HP3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="afl-Z2-dUX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="6HL-XB-KUS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grj-5M-rT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="935"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="ioa-l3-SYq">
+            <objects>
+                <viewController id="fkX-KI-sda" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7h-yX-oei">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="31P-gt-D5d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="ellipsis" catalog="system" id="9vm-im-6Rf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFf-Gq-mgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="935"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="Efp-Yk-lAY">
+            <objects>
+                <viewController id="zyO-J7-1VA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aav-Gd-HIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="z4G-fI-lph"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star" catalog="system" id="kcP-qM-ARX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIH-IT-lhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="935"/>
         </scene>
     </scenes>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
-        <image name="ZoomerFit.png" width="1002" height="267"/>
+        <image name="ZoomerFitLogo.png" width="1002" height="267"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="athleanx.jpg" width="468" height="612"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
         <image name="clarkfir.jpg" width="425" height="531"/>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="sign in.png" width="1619" height="776"/>
+        <image name="star" catalog="system" width="64" height="58"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
 </document>

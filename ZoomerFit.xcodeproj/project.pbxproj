@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		06741D5E2456286B009C5A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D5D2456286B009C5A26 /* AppDelegate.swift */; };
 		06741D602456286B009C5A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D5F2456286B009C5A26 /* SceneDelegate.swift */; };
-		06741D622456286B009C5A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D612456286B009C5A26 /* ViewController.swift */; };
+		06741D622456286B009C5A26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D612456286B009C5A26 /* SignInViewController.swift */; };
 		06741D652456286B009C5A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06741D632456286B009C5A26 /* Main.storyboard */; };
 		06741D6724562870009C5A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06741D6624562870009C5A26 /* Assets.xcassets */; };
 		06741D6A24562870009C5A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06741D6824562870009C5A26 /* LaunchScreen.storyboard */; };
@@ -18,9 +18,9 @@
 		06741D8F2456293B009C5A26 /* zoomer login background.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D8D2456293B009C5A26 /* zoomer login background.png */; };
 		06741D942456294C009C5A26 /* sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D912456294A009C5A26 /* sign in.png */; };
 		06741D952456294C009C5A26 /* sign up.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D922456294B009C5A26 /* sign up.png */; };
-		06741D962456294C009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */; };
+		06741D962456294C009C5A26 /* DwayneJohnson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D932456294B009C5A26 /* DwayneJohnson.jpg */; };
 		06741D9824562953009C5A26 /* Muscle group screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9724562953009C5A26 /* Muscle group screen.png */; };
-		06741D9C2456295D009C5A26 /* clarkfir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D992456295B009C5A26 /* clarkfir.jpg */; };
+		06741D9C2456295D009C5A26 /* clarkfit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D992456295B009C5A26 /* clarkfit.jpg */; };
 		06741D9D2456295D009C5A26 /* diamondcut.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9A2456295B009C5A26 /* diamondcut.jpeg */; };
 		06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */; };
 		06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9F24562961009C5A26 /* christianfleenor.jpg */; };
@@ -33,6 +33,9 @@
 		06741DB2245A1F09009C5A26 /* home_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DB0245A1F09009C5A26 /* home_grey.png */; };
 		06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DB1245A1F09009C5A26 /* HomeIconBlack.png */; };
 		06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */; };
+		06741DBF245A23B3009C5A26 /* carousel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DBE245A23B3009C5A26 /* carousel1.png */; };
+		06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DC0245A23B9009C5A26 /* popularitychart.png */; };
+		06741DC9245A2570009C5A26 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DC8245A2570009C5A26 /* WelcomeViewController.swift */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -62,7 +65,7 @@
 		06741D5A2456286B009C5A26 /* ZoomerFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomerFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06741D5D2456286B009C5A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06741D5F2456286B009C5A26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06741D612456286B009C5A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06741D612456286B009C5A26 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		06741D642456286B009C5A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06741D6624562870009C5A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06741D6924562870009C5A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,9 +79,9 @@
 		06741D8D2456293B009C5A26 /* zoomer login background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoomer login background.png"; sourceTree = "<group>"; };
 		06741D912456294A009C5A26 /* sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign in.png"; sourceTree = "<group>"; };
 		06741D922456294B009C5A26 /* sign up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign up.png"; sourceTree = "<group>"; };
-		06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Rock-Dwayne-Johnson-gym-9.jpg"; sourceTree = "<group>"; };
+		06741D932456294B009C5A26 /* DwayneJohnson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DwayneJohnson.jpg; sourceTree = "<group>"; };
 		06741D9724562953009C5A26 /* Muscle group screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Muscle group screen.png"; sourceTree = "<group>"; };
-		06741D992456295B009C5A26 /* clarkfir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clarkfir.jpg; sourceTree = "<group>"; };
+		06741D992456295B009C5A26 /* clarkfit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clarkfit.jpg; sourceTree = "<group>"; };
 		06741D9A2456295B009C5A26 /* diamondcut.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diamondcut.jpeg; sourceTree = "<group>"; };
 		06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ebenezer samuel.jpeg"; sourceTree = "<group>"; };
 		06741D9F24562961009C5A26 /* christianfleenor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christianfleenor.jpg; sourceTree = "<group>"; };
@@ -91,6 +94,9 @@
 		06741DB0245A1F09009C5A26 /* home_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_grey.png; sourceTree = "<group>"; };
 		06741DB1245A1F09009C5A26 /* HomeIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIconBlack.png; sourceTree = "<group>"; };
 		06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomerFitLogo.png; sourceTree = "<group>"; };
+		06741DBE245A23B3009C5A26 /* carousel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel1.png; sourceTree = "<group>"; };
+		06741DC0245A23B9009C5A26 /* popularitychart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popularitychart.png; sourceTree = "<group>"; };
+		06741DC8245A2570009C5A26 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +167,8 @@
 				399199F324567B330098A184 /* GoogleService-Info.plist */,
 				06741D5D2456286B009C5A26 /* AppDelegate.swift */,
 				06741D5F2456286B009C5A26 /* SceneDelegate.swift */,
-				06741D612456286B009C5A26 /* ViewController.swift */,
+				06741D612456286B009C5A26 /* SignInViewController.swift */,
+				06741DC8245A2570009C5A26 /* WelcomeViewController.swift */,
 				06741D632456286B009C5A26 /* Main.storyboard */,
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
@@ -192,17 +199,38 @@
 		06741DB4245A1F74009C5A26 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */,
-				06741D8D2456293B009C5A26 /* zoomer login background.png */,
+				06741DC4245A2402009C5A26 /* Nav Icons */,
+				06741DC3245A23F1009C5A26 /* Welcome Screen */,
+				06741DC2245A23CA009C5A26 /* Sign In Screen */,
+				06741D9724562953009C5A26 /* Muscle group screen.png */,
+				06741DC5245A2428009C5A26 /* Coaches */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
+		06741DC2245A23CA009C5A26 /* Sign In Screen */ = {
+			isa = PBXGroup;
+			children = (
 				06741D912456294A009C5A26 /* sign in.png */,
 				06741D922456294B009C5A26 /* sign up.png */,
-				06741D9724562953009C5A26 /* Muscle group screen.png */,
-				06741D9F24562961009C5A26 /* christianfleenor.jpg */,
-				06741DA124562966009C5A26 /* athleanx.jpg */,
-				06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */,
-				06741D992456295B009C5A26 /* clarkfir.jpg */,
-				06741D9A2456295B009C5A26 /* diamondcut.jpeg */,
-				06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */,
+				06741D8D2456293B009C5A26 /* zoomer login background.png */,
+				06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */,
+			);
+			path = "Sign In Screen";
+			sourceTree = "<group>";
+		};
+		06741DC3245A23F1009C5A26 /* Welcome Screen */ = {
+			isa = PBXGroup;
+			children = (
+				06741DBE245A23B3009C5A26 /* carousel1.png */,
+				06741DC0245A23B9009C5A26 /* popularitychart.png */,
+			);
+			path = "Welcome Screen";
+			sourceTree = "<group>";
+		};
+		06741DC4245A2402009C5A26 /* Nav Icons */ = {
+			isa = PBXGroup;
+			children = (
 				06741DA7245A1EE7009C5A26 /* OtherIconGrey.png */,
 				06741DA8245A1EE7009C5A26 /* ProfileIconBlack.png */,
 				06741DA6245A1EE6009C5A26 /* ProfileIconGrey.png */,
@@ -211,7 +239,20 @@
 				06741DB0245A1F09009C5A26 /* home_grey.png */,
 				06741DB1245A1F09009C5A26 /* HomeIconBlack.png */,
 			);
-			path = Pictures;
+			path = "Nav Icons";
+			sourceTree = "<group>";
+		};
+		06741DC5245A2428009C5A26 /* Coaches */ = {
+			isa = PBXGroup;
+			children = (
+				06741D9F24562961009C5A26 /* christianfleenor.jpg */,
+				06741DA124562966009C5A26 /* athleanx.jpg */,
+				06741D932456294B009C5A26 /* DwayneJohnson.jpg */,
+				06741D992456295B009C5A26 /* clarkfit.jpg */,
+				06741D9A2456295B009C5A26 /* diamondcut.jpeg */,
+				06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */,
+			);
+			path = Coaches;
 			sourceTree = "<group>";
 		};
 		15C92916FD34AFCED9FCFD70 /* Pods */ = {
@@ -351,12 +392,13 @@
 				06741D6A24562870009C5A26 /* LaunchScreen.storyboard in Resources */,
 				06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */,
 				399199F424567B330098A184 /* GoogleService-Info.plist in Resources */,
-				06741D9C2456295D009C5A26 /* clarkfir.jpg in Resources */,
+				06741D9C2456295D009C5A26 /* clarkfit.jpg in Resources */,
 				06741D9D2456295D009C5A26 /* diamondcut.jpeg in Resources */,
 				06741D6724562870009C5A26 /* Assets.xcassets in Resources */,
-				06741D962456294C009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg in Resources */,
+				06741D962456294C009C5A26 /* DwayneJohnson.jpg in Resources */,
 				06741DAE245A1EFE009C5A26 /* SearchIconBlack.png in Resources */,
 				06741DA9245A1EE7009C5A26 /* ProfileIconGrey.png in Resources */,
+				06741DBF245A23B3009C5A26 /* carousel1.png in Resources */,
 				06741D942456294C009C5A26 /* sign in.png in Resources */,
 				06741D952456294C009C5A26 /* sign up.png in Resources */,
 				06741DAF245A1EFE009C5A26 /* SearchIconGrey.png in Resources */,
@@ -364,6 +406,7 @@
 				06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */,
 				06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */,
 				06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */,
+				06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */,
 				06741D652456286B009C5A26 /* Main.storyboard in Resources */,
 				06741D9824562953009C5A26 /* Muscle group screen.png in Resources */,
 				06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */,
@@ -533,7 +576,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06741D622456286B009C5A26 /* ViewController.swift in Sources */,
+				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
+				06741DC9245A2570009C5A26 /* WelcomeViewController.swift in Sources */,
 				06741D5E2456286B009C5A26 /* AppDelegate.swift in Sources */,
 				06741D602456286B009C5A26 /* SceneDelegate.swift in Sources */,
 			);
