@@ -16,7 +16,6 @@
 		06741D7524562870009C5A26 /* ZoomerFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D7424562870009C5A26 /* ZoomerFitTests.swift */; };
 		06741D8024562870009C5A26 /* ZoomerFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741D7F24562870009C5A26 /* ZoomerFitUITests.swift */; };
 		06741D8F2456293B009C5A26 /* zoomer login background.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D8D2456293B009C5A26 /* zoomer login background.png */; };
-		06741D902456293B009C5A26 /* ZoomerFit.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D8E2456293B009C5A26 /* ZoomerFit.png */; };
 		06741D942456294C009C5A26 /* sign in.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D912456294A009C5A26 /* sign in.png */; };
 		06741D952456294C009C5A26 /* sign up.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741D922456294B009C5A26 /* sign up.png */; };
 		06741D962456294C009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */; };
@@ -26,6 +25,14 @@
 		06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */; };
 		06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741D9F24562961009C5A26 /* christianfleenor.jpg */; };
 		06741DA224562966009C5A26 /* athleanx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06741DA124562966009C5A26 /* athleanx.jpg */; };
+		06741DA9245A1EE7009C5A26 /* ProfileIconGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DA6245A1EE6009C5A26 /* ProfileIconGrey.png */; };
+		06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DA7245A1EE7009C5A26 /* OtherIconGrey.png */; };
+		06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DA8245A1EE7009C5A26 /* ProfileIconBlack.png */; };
+		06741DAE245A1EFE009C5A26 /* SearchIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DAC245A1EFE009C5A26 /* SearchIconBlack.png */; };
+		06741DAF245A1EFE009C5A26 /* SearchIconGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DAD245A1EFE009C5A26 /* SearchIconGrey.png */; };
+		06741DB2245A1F09009C5A26 /* home_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DB0245A1F09009C5A26 /* home_grey.png */; };
+		06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DB1245A1F09009C5A26 /* HomeIconBlack.png */; };
+		06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -67,7 +74,6 @@
 		06741D7F24562870009C5A26 /* ZoomerFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomerFitUITests.swift; sourceTree = "<group>"; };
 		06741D8124562870009C5A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06741D8D2456293B009C5A26 /* zoomer login background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoomer login background.png"; sourceTree = "<group>"; };
-		06741D8E2456293B009C5A26 /* ZoomerFit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomerFit.png; sourceTree = "<group>"; };
 		06741D912456294A009C5A26 /* sign in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign in.png"; sourceTree = "<group>"; };
 		06741D922456294B009C5A26 /* sign up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign up.png"; sourceTree = "<group>"; };
 		06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Rock-Dwayne-Johnson-gym-9.jpg"; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 		06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ebenezer samuel.jpeg"; sourceTree = "<group>"; };
 		06741D9F24562961009C5A26 /* christianfleenor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christianfleenor.jpg; sourceTree = "<group>"; };
 		06741DA124562966009C5A26 /* athleanx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = athleanx.jpg; sourceTree = "<group>"; };
+		06741DA6245A1EE6009C5A26 /* ProfileIconGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileIconGrey.png; sourceTree = "<group>"; };
+		06741DA7245A1EE7009C5A26 /* OtherIconGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OtherIconGrey.png; sourceTree = "<group>"; };
+		06741DA8245A1EE7009C5A26 /* ProfileIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileIconBlack.png; sourceTree = "<group>"; };
+		06741DAC245A1EFE009C5A26 /* SearchIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchIconBlack.png; sourceTree = "<group>"; };
+		06741DAD245A1EFE009C5A26 /* SearchIconGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchIconGrey.png; sourceTree = "<group>"; };
+		06741DB0245A1F09009C5A26 /* home_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_grey.png; sourceTree = "<group>"; };
+		06741DB1245A1F09009C5A26 /* HomeIconBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIconBlack.png; sourceTree = "<group>"; };
+		06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomerFitLogo.png; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,17 +166,7 @@
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
 				06741D6B24562870009C5A26 /* Info.plist */,
-				06741D8D2456293B009C5A26 /* zoomer login background.png */,
-				06741D912456294A009C5A26 /* sign in.png */,
-				06741D922456294B009C5A26 /* sign up.png */,
-				06741D9724562953009C5A26 /* Muscle group screen.png */,
-				06741D9F24562961009C5A26 /* christianfleenor.jpg */,
-				06741DA124562966009C5A26 /* athleanx.jpg */,
-				06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */,
-				06741D992456295B009C5A26 /* clarkfir.jpg */,
-				06741D9A2456295B009C5A26 /* diamondcut.jpeg */,
-				06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */,
-				06741D8E2456293B009C5A26 /* ZoomerFit.png */,
+				06741DB4245A1F74009C5A26 /* Pictures */,
 			);
 			path = ZoomerFit;
 			sourceTree = "<group>";
@@ -183,6 +187,31 @@
 				06741D8124562870009C5A26 /* Info.plist */,
 			);
 			path = ZoomerFitUITests;
+			sourceTree = "<group>";
+		};
+		06741DB4245A1F74009C5A26 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */,
+				06741D8D2456293B009C5A26 /* zoomer login background.png */,
+				06741D912456294A009C5A26 /* sign in.png */,
+				06741D922456294B009C5A26 /* sign up.png */,
+				06741D9724562953009C5A26 /* Muscle group screen.png */,
+				06741D9F24562961009C5A26 /* christianfleenor.jpg */,
+				06741DA124562966009C5A26 /* athleanx.jpg */,
+				06741D932456294B009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg */,
+				06741D992456295B009C5A26 /* clarkfir.jpg */,
+				06741D9A2456295B009C5A26 /* diamondcut.jpeg */,
+				06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */,
+				06741DA7245A1EE7009C5A26 /* OtherIconGrey.png */,
+				06741DA8245A1EE7009C5A26 /* ProfileIconBlack.png */,
+				06741DA6245A1EE6009C5A26 /* ProfileIconGrey.png */,
+				06741DAC245A1EFE009C5A26 /* SearchIconBlack.png */,
+				06741DAD245A1EFE009C5A26 /* SearchIconGrey.png */,
+				06741DB0245A1F09009C5A26 /* home_grey.png */,
+				06741DB1245A1F09009C5A26 /* HomeIconBlack.png */,
+			);
+			path = Pictures;
 			sourceTree = "<group>";
 		};
 		15C92916FD34AFCED9FCFD70 /* Pods */ = {
@@ -326,13 +355,20 @@
 				06741D9D2456295D009C5A26 /* diamondcut.jpeg in Resources */,
 				06741D6724562870009C5A26 /* Assets.xcassets in Resources */,
 				06741D962456294C009C5A26 /* The-Rock-Dwayne-Johnson-gym-9.jpg in Resources */,
+				06741DAE245A1EFE009C5A26 /* SearchIconBlack.png in Resources */,
+				06741DA9245A1EE7009C5A26 /* ProfileIconGrey.png in Resources */,
 				06741D942456294C009C5A26 /* sign in.png in Resources */,
 				06741D952456294C009C5A26 /* sign up.png in Resources */,
+				06741DAF245A1EFE009C5A26 /* SearchIconGrey.png in Resources */,
+				06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */,
 				06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */,
+				06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */,
+				06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */,
 				06741D652456286B009C5A26 /* Main.storyboard in Resources */,
-				06741D902456293B009C5A26 /* ZoomerFit.png in Resources */,
 				06741D9824562953009C5A26 /* Muscle group screen.png in Resources */,
+				06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */,
 				06741DA224562966009C5A26 /* athleanx.jpg in Resources */,
+				06741DB2245A1F09009C5A26 /* home_grey.png in Resources */,
 				06741D8F2456293B009C5A26 /* zoomer login background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
