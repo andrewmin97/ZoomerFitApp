@@ -10,7 +10,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ANd-z0-1L8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Owh-qs-biP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="iqY-zr-sNS" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="uA0-BZ-RuF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7mF-P4-Efv">
@@ -26,6 +25,7 @@
                         <segue destination="zyO-J7-1VA" kind="relationship" relationship="viewControllers" id="lW2-op-q5t"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owh-qs-biP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1384" y="128"/>
         </scene>
@@ -293,7 +293,7 @@ Rating: 5/5</string>
         <!--Search-->
         <scene sceneID="3En-F1-Eom">
             <objects>
-                <viewController id="Evx-fI-6iW" sceneMemberID="viewController">
+                <viewController id="Evx-fI-6iW" customClass="SearchViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YJc-5N-PBm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,6 +302,9 @@ Rating: 5/5</string>
                                 <rect key="frame" x="100" y="216" width="214" height="175"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Browse by Exercise" backgroundImage="exerciseButton.png"/>
+                                <connections>
+                                    <action selector="exerciseButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="IfO-p1-RAp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Z0-ebv">
                                 <rect key="frame" x="100" y="455" width="214" height="166"/>
@@ -309,6 +312,9 @@ Rating: 5/5</string>
                                 <state key="normal" title="Browse by Coach" backgroundImage="coachButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="coachButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="2tK-e8-oCw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -332,18 +338,88 @@ Rating: 5/5</string>
         <!--Profile-->
         <scene sceneID="nAW-Vx-pCd">
             <objects>
-                <viewController id="pqK-dF-Nfd" sceneMemberID="viewController">
+                <viewController id="pqK-dF-Nfd" customClass="ProfileViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1k4-1a-HP3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-7c-wmD">
+                                <rect key="frame" x="87" y="122" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-Q2-qUC">
+                                <rect key="frame" x="121" y="335" width="173" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile" backgroundImage="blueCircleButton.png"/>
+                                <connections>
+                                    <action selector="profileButtonTouched:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="W28-1P-d5T"/>
+                                    <segue destination="rGt-vx-FMk" kind="show" id="hRz-uT-B32"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfI-gm-PU6">
+                                <rect key="frame" x="121" y="530" width="173" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Upload Workout" backgroundImage="blueCircleButton.png"/>
+                                <connections>
+                                    <action selector="uploadButtonTouched:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="lxX-6Z-9kG"/>
+                                    <segue destination="oAy-hC-lcj" kind="show" id="yZF-4t-qGT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-Qh-H4P">
+                                <rect key="frame" x="76" y="277" width="263" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="afl-Z2-dUX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="6HL-XB-KUS"/>
+                    <connections>
+                        <outlet property="profileButton" destination="7Br-Q2-qUC" id="whB-5u-VK1"/>
+                        <outlet property="profileID" destination="2nm-Qh-H4P" id="M8T-9a-8tL"/>
+                        <outlet property="profilePicture" destination="R6E-7c-wmD" id="Jdd-OE-29A"/>
+                        <outlet property="uploadWorkout" destination="jfI-gm-PU6" id="mK6-wm-Fhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grj-5M-rT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1384" y="935"/>
+            <point key="canvasLocation" x="-1384.0579710144928" y="934.82142857142856"/>
+        </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="uJ3-44-KB6">
+            <objects>
+                <viewController id="rGt-vx-FMk" customClass="UserProfileViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="py4-mV-hKH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aaG-Ta-Jek"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TMB-k6-knD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8k-jg-XkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="1617"/>
+        </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="kkZ-Jx-Hpd">
+            <objects>
+                <viewController id="oAy-hC-lcj" customClass="UploadViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0O-4r-8iw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sbr-Sm-VYp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpf-eH-Tc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="2293"/>
         </scene>
         <!--More-->
         <scene sceneID="ioa-l3-SYq">
@@ -383,6 +459,7 @@ Rating: 5/5</string>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="athleanx.jpg" width="468" height="612"/>
+        <image name="blueCircleButton.png" width="162" height="159"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
         <image name="clarkfir.jpg" width="425" height="531"/>
