@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:WelcomeViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:ZoomerFit.xcodeproj">
    </FileRef>
    <FileRef

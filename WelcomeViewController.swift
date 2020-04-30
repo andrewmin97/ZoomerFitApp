@@ -1,31 +1,21 @@
 //
 //  WelcomeViewController.swift
-//  ZoomerFit
+//  
 //
-//  Created by Andrew Kang on 4/30/20.
-//  Copyright © 2020 Andrew Kang. All rights reserved.
+//  Created by Andrew Kang on 4/29/20.
 //
 
 import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet var welcomeLabel: UILabel!
-    @IBOutlet weak var eventImage: UIImageView!
-    
-    @IBOutlet weak var popularityChart: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventImage.image = UIImage (named: "carousel1.png")
-        
-        popularityChart.image = UIImage(named: "popularitychart.png")
-        
-        self.welcomeLabel.text = "Welcome!"
-        
+
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

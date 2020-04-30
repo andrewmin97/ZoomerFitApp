@@ -35,7 +35,9 @@
 		06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */; };
 		06741DBF245A23B3009C5A26 /* carousel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DBE245A23B3009C5A26 /* carousel1.png */; };
 		06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DC0245A23B9009C5A26 /* popularitychart.png */; };
-		06741DC9245A2570009C5A26 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DC8245A2570009C5A26 /* WelcomeViewController.swift */; };
+		06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DCC245A8DF6009C5A26 /* WelcomeViewController.swift */; };
+		06741DD0245AADF7009C5A26 /* exerciseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DCF245AADF6009C5A26 /* exerciseButton.png */; };
+		06741DD2245AAE01009C5A26 /* coachButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DD1245AAE01009C5A26 /* coachButton.png */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -96,7 +98,9 @@
 		06741DBC245A205B009C5A26 /* ZoomerFitLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomerFitLogo.png; sourceTree = "<group>"; };
 		06741DBE245A23B3009C5A26 /* carousel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carousel1.png; sourceTree = "<group>"; };
 		06741DC0245A23B9009C5A26 /* popularitychart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popularitychart.png; sourceTree = "<group>"; };
-		06741DC8245A2570009C5A26 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		06741DCC245A8DF6009C5A26 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ZoomerFit/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		06741DCF245AADF6009C5A26 /* exerciseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exerciseButton.png; sourceTree = "<group>"; };
+		06741DD1245AAE01009C5A26 /* coachButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coachButton.png; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,8 +171,8 @@
 				399199F324567B330098A184 /* GoogleService-Info.plist */,
 				06741D5D2456286B009C5A26 /* AppDelegate.swift */,
 				06741D5F2456286B009C5A26 /* SceneDelegate.swift */,
+				06741DCC245A8DF6009C5A26 /* WelcomeViewController.swift */,
 				06741D612456286B009C5A26 /* SignInViewController.swift */,
-				06741DC8245A2570009C5A26 /* WelcomeViewController.swift */,
 				06741D632456286B009C5A26 /* Main.storyboard */,
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
@@ -203,6 +207,7 @@
 				06741DC3245A23F1009C5A26 /* Welcome Screen */,
 				06741DC2245A23CA009C5A26 /* Sign In Screen */,
 				06741D9724562953009C5A26 /* Muscle group screen.png */,
+				06741DCE245AADC7009C5A26 /* Coach or Exercise Screen */,
 				06741DC5245A2428009C5A26 /* Coaches */,
 			);
 			path = Pictures;
@@ -253,6 +258,15 @@
 				06741D9B2456295C009C5A26 /* ebenezer samuel.jpeg */,
 			);
 			path = Coaches;
+			sourceTree = "<group>";
+		};
+		06741DCE245AADC7009C5A26 /* Coach or Exercise Screen */ = {
+			isa = PBXGroup;
+			children = (
+				06741DD1245AAE01009C5A26 /* coachButton.png */,
+				06741DCF245AADF6009C5A26 /* exerciseButton.png */,
+			);
+			path = "Coach or Exercise Screen";
 			sourceTree = "<group>";
 		};
 		15C92916FD34AFCED9FCFD70 /* Pods */ = {
@@ -390,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06741D6A24562870009C5A26 /* LaunchScreen.storyboard in Resources */,
+				06741DD0245AADF7009C5A26 /* exerciseButton.png in Resources */,
 				06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */,
 				399199F424567B330098A184 /* GoogleService-Info.plist in Resources */,
 				06741D9C2456295D009C5A26 /* clarkfit.jpg in Resources */,
@@ -404,6 +419,7 @@
 				06741DAF245A1EFE009C5A26 /* SearchIconGrey.png in Resources */,
 				06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */,
 				06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */,
+				06741DD2245AAE01009C5A26 /* coachButton.png in Resources */,
 				06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */,
 				06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */,
 				06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */,
@@ -577,7 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
-				06741DC9245A2570009C5A26 /* WelcomeViewController.swift in Sources */,
+				06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */,
 				06741D5E2456286B009C5A26 /* AppDelegate.swift in Sources */,
 				06741D602456286B009C5A26 /* SceneDelegate.swift in Sources */,
 			);
