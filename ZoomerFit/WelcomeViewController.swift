@@ -17,11 +17,11 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventImage.image = UIImage (named: "carousel1.png")
+       // eventImage.image = UIImage (named: "carousel1.png")
         
-        popularityChart.image = UIImage(named: "popularitychart.png")
-        
-        self.welcomeLabel.text = "Welcome!"
+     //   popularityChart.image = UIImage(named: "popularitychart.png")
+//        
+        //self.welcomeLabel.text = "Welcome!"
         
         // Do any additional setup after loading the view.
     }

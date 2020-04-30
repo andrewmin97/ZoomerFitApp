@@ -38,7 +38,6 @@
 		06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DCC245A8DF6009C5A26 /* WelcomeViewController.swift */; };
 		06741DD0245AADF7009C5A26 /* exerciseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DCF245AADF6009C5A26 /* exerciseButton.png */; };
 		06741DD2245AAE01009C5A26 /* coachButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DD1245AAE01009C5A26 /* coachButton.png */; };
-		06741DDD245AB888009C5A26 /* blueCircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 06741DDC245AB888009C5A26 /* blueCircleButton.png */; };
 		06741DDF245ABB1D009C5A26 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DDE245ABB1D009C5A26 /* SearchViewController.swift */; };
 		06741DE1245ABCB6009C5A26 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE0245ABCB6009C5A26 /* ProfileViewController.swift */; };
 		06741DE3245AC1B5009C5A26 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */; };
@@ -448,7 +447,6 @@
 				06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */,
 				06741D652456286B009C5A26 /* Main.storyboard in Resources */,
 				06741D9824562953009C5A26 /* Muscle group screen.png in Resources */,
-				06741DDD245AB888009C5A26 /* blueCircleButton.png in Resources */,
 				06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */,
 				06741DA224562966009C5A26 /* athleanx.jpg in Resources */,
 				06741DB2245A1F09009C5A26 /* home_grey.png in Resources */,
