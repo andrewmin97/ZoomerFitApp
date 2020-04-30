@@ -16,11 +16,11 @@ class ViewController: UIViewController, LoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        let loginButton = FBLoginButton()
-        loginButton.delegate = self
-        loginButton.center = view.center
-        view.addSubview(loginButton)
-        loginButton.permissions = ["public_profile", "email"]
+//        let loginButton = FBLoginButton()
+//        loginButton.delegate = self
+//        loginButton.center = view.center
+//        view.addSubview(loginButton)
+//        loginButton.permissions = ["public_profile", "email"]
         if let token = AccessToken.current,
             !token.isExpired {
             firebaseFBLogin(accessToken: AccessToken.current!.tokenString)
@@ -65,7 +65,7 @@ class ViewController: UIViewController, LoginButtonDelegate {
             return
         }
         authUI?.delegate = self
-        authUI?.providers = [FUIEmailAuth()]
+        authUI?.providers = [FUIEmailAuth(), FUIFacebookAuth()]
         let authViewController = authUI?.authViewController()
         present(authViewController!, animated: true, completion: nil)
     }
