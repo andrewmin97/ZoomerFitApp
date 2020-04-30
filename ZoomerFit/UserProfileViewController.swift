@@ -10,10 +10,30 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+    @IBOutlet weak var backArrow: UIButton!
+    
+    @IBOutlet weak var userImage: UIImageView!
+    
+    @IBOutlet weak var userName: UILabel!
+    
+    @IBOutlet weak var userDescription: UITextView!
+    
+    @IBOutlet weak var profileTable: UITableView!
+    
+    @IBOutlet weak var tableThumbnail: UITableViewCell!
+    
+    @IBOutlet weak var tableDescription: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userImage.image = UIImage (named: "clarkfit.jpg")
         // Do any additional setup after loading the view.
+    }
+    @IBAction func backArrowPressed(_ sender: Any) {
+        //performSegue(withIdentifier: "", sender: self)
+        
+        //[self dismissViewControllerAnimated:YES completion:nil];
     }
     
 
