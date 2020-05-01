@@ -45,6 +45,7 @@
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
+		39CAD8D4245CE2640017F479 /* placeholder_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 39CAD8D3245CE2630017F479 /* placeholder_profile.png */; };
 		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
 		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
 		D14F3EC86A05A1B40501B85B /* Pods_ZoomerFitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */; };
@@ -115,6 +116,7 @@
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
 		3974FFC32457BD0E00B5F22F /* ZoomerFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomerFit.entitlements; sourceTree = "<group>"; };
 		399199F324567B330098A184 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39CAD8D3245CE2630017F479 /* placeholder_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_profile.png; sourceTree = "<group>"; };
 		5F83B03E72A4AC36B4E6EC49 /* Pods-ZoomerFitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.release.xcconfig"; sourceTree = "<group>"; };
 		65729B0FC7AC2DCBDFD60F67 /* Pods-ZoomerFitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 		06741DC2245A23CA009C5A26 /* Sign In Screen */ = {
 			isa = PBXGroup;
 			children = (
+				39CAD8D3245CE2630017F479 /* placeholder_profile.png */,
 				06741D912456294A009C5A26 /* sign in.png */,
 				06741D922456294B009C5A26 /* sign up.png */,
 				06741D8D2456293B009C5A26 /* zoomer login background.png */,
@@ -448,6 +451,7 @@
 				06741D652456286B009C5A26 /* Main.storyboard in Resources */,
 				06741D9824562953009C5A26 /* Muscle group screen.png in Resources */,
 				06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */,
+				39CAD8D4245CE2640017F479 /* placeholder_profile.png in Resources */,
 				06741DA224562966009C5A26 /* athleanx.jpg in Resources */,
 				06741DB2245A1F09009C5A26 /* home_grey.png in Resources */,
 				06741D8F2456293B009C5A26 /* zoomer login background.png in Resources */,
