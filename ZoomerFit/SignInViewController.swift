@@ -10,6 +10,7 @@ import UIKit
 import FirebaseUI
 import FBSDKLoginKit
 import Firebase
+import GoogleSignIn
 
 class ViewController: UIViewController, LoginButtonDelegate {
         
@@ -65,7 +66,7 @@ class ViewController: UIViewController, LoginButtonDelegate {
             return
         }
         authUI?.delegate = self
-        authUI?.providers = [FUIEmailAuth(), FUIFacebookAuth()]
+        authUI?.providers = [FUIEmailAuth(), FUIFacebookAuth(), FUIGoogleAuth()]
         let authViewController = authUI?.authViewController()
         present(authViewController!, animated: true, completion: nil)
     }
