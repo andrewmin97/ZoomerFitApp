@@ -15,6 +15,7 @@ pod 'FirebaseUI'
 
 #pod for facebook auth
 pod 'FBSDKLoginKit'
+pod 'Firebase/Storage'
     
 # https://firebase.google.com/docs/ios/setup#available-pods
 

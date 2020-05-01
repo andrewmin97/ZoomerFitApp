@@ -358,6 +358,7 @@ PODS:
 DEPENDENCIES:
   - FBSDKLoginKit
   - Firebase/Analytics
+  - Firebase/Storage
   - FirebaseUI
 
 SPEC REPOS:
@@ -425,6 +426,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
 
-PODFILE CHECKSUM: 4dc0b9d0949046d9f46613a404a020e957c226f1
+PODFILE CHECKSUM: a9f3a1f6b791ebd1ce20c0a66dee312e8e49fcf3
 
 COCOAPODS: 1.9.1

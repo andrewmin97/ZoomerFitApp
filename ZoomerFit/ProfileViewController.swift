@@ -10,43 +10,38 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var profileID: UILabel!
+
+    @IBOutlet weak var profileImageView: UIImageView!
     
-    @IBOutlet weak var profileButton: UIButton!
-    
-    @IBOutlet weak var uploadWorkout: UIButton!
+    @IBOutlet weak var tapToChangeProfileButton: UIButton!
+    var imagePicker:UIImagePickerController!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePicture.image = UIImage (named: "clarkfit.png")
-        profileID.text = "placeholder UserID"
-        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
     
- 
-
-    @IBAction func profileButtonTouched(_ sender: Any) {
-        performSegue(withIdentifier: "", sender: self)
-        
+    @IBAction func changeProfile(_ sender: Any) {
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
-
-    @IBAction func uploadButtonTouched(_ sender: Any) {
-        performSegue(withIdentifier: "", sender: self)
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.profileImageView.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+

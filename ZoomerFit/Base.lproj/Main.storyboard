@@ -253,7 +253,7 @@ Rating: 5/5</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-q4-CVR">
-                                <rect key="frame" x="132" y="114" width="151" height="99"/>
+                                <rect key="frame" x="73" y="106" width="151" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="WelcomeLabel" label="WelcomeLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -265,7 +265,7 @@ Rating: 5/5</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHl-S7-9wx">
-                                <rect key="frame" x="63" y="213" width="79" height="44"/>
+                                <rect key="frame" x="213" y="133" width="79" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -338,46 +338,31 @@ Rating: 5/5</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-7c-wmD">
-                                <rect key="frame" x="87" y="122" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R6J-Yo-dyM">
+                                <rect key="frame" x="87" y="79.5" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-Q2-qUC">
-                                <rect key="frame" x="121" y="335" width="173" height="173"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-0g-qQh">
+                                <rect key="frame" x="184" y="302" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Profile" backgroundImage="blueCircleButton.png"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O8-ZZ-ost">
+                                <rect key="frame" x="155" y="206" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap to Change "/>
                                 <connections>
-                                    <action selector="profileButtonTouched:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="W28-1P-d5T"/>
-                                    <segue destination="rGt-vx-FMk" kind="show" id="hRz-uT-B32"/>
+                                    <action selector="changeProfile:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="wrx-ER-kUU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfI-gm-PU6">
-                                <rect key="frame" x="121" y="530" width="173" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Upload Workout" backgroundImage="blueCircleButton.png"/>
-                                <connections>
-                                    <action selector="uploadButtonTouched:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="lxX-6Z-9kG"/>
-                                    <segue destination="oAy-hC-lcj" kind="show" id="yZF-4t-qGT"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-Qh-H4P">
-                                <rect key="frame" x="76" y="277" width="263" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="afl-Z2-dUX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="6HL-XB-KUS"/>
                     <connections>
-                        <outlet property="profileButton" destination="7Br-Q2-qUC" id="whB-5u-VK1"/>
-                        <outlet property="profileID" destination="2nm-Qh-H4P" id="M8T-9a-8tL"/>
-                        <outlet property="profilePicture" destination="R6E-7c-wmD" id="Jdd-OE-29A"/>
-                        <outlet property="uploadWorkout" destination="jfI-gm-PU6" id="mK6-wm-Fhk"/>
+                        <outlet property="profileImageView" destination="R6J-Yo-dyM" id="z4D-zZ-kH7"/>
+                        <outlet property="tapToChangeProfileButton" destination="6O8-ZZ-ost" id="XsV-OQ-OuU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grj-5M-rT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -389,7 +374,7 @@ Rating: 5/5</string>
             <objects>
                 <viewController storyboardIdentifier="UserProfile" id="rGt-vx-FMk" customClass="UserProfileViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="py4-mV-hKH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-JI-gbC">
@@ -449,7 +434,7 @@ Rating: 5/5</string>
             <objects>
                 <viewController id="oAy-hC-lcj" customClass="UploadViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o0O-4r-8iw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
@@ -498,7 +483,6 @@ Rating: 5/5</string>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="athleanx.jpg" width="468" height="612"/>
-        <image name="blueCircleButton.png" width="162" height="159"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
         <image name="clarkfir.jpg" width="425" height="531"/>
@@ -510,6 +494,7 @@ Rating: 5/5</string>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="sign in.png" width="1619" height="776"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
