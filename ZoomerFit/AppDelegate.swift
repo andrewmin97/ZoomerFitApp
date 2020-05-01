@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             didFinishLaunchingWithOptions: launchOptions
         )
         FirebaseApp.configure()
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         return true

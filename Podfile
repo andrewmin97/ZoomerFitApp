@@ -15,7 +15,9 @@ pod 'FirebaseUI'
 
 #pod for facebook auth
 pod 'FBSDKLoginKit'
-    
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
+
 # https://firebase.google.com/docs/ios/setup#available-pods
 
   target 'ZoomerFitTests' do

@@ -7,46 +7,113 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var profileID: UILabel!
+
+    @IBOutlet weak var profileImageView: UIImageView!
     
-    @IBOutlet weak var profileButton: UIButton!
-    
-    @IBOutlet weak var uploadWorkout: UIButton!
+    @IBOutlet weak var tapToChangeProfileButton: UIButton!
+    var imagePicker:UIImagePickerController!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePicture.image = UIImage (named: "clarkfit.png")
-        profileID.text = "placeholder UserID"
         
+        
+        let user = Auth.auth().currentUser
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        // Load the image using SDWebImage
+        let placeholderImage = UIImage(named: "placeholder_profile.png")
+        profileImageView.sd_setImage(with: storageRef, placeholderImage: placeholderImage)
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
     
- 
-
-    @IBAction func profileButtonTouched(_ sender: Any) {
-        performSegue(withIdentifier: "", sender: self)
+    @IBAction func changeProfile(_ sender: Any) {
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        let storageRef = Storage.storage().reference().child("user/\(uid)")
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else {return}
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpeg"
+        let uploadTask = storageRef.putData(imageData, metadata: metaData) { (metadata, error) in
+          guard let metadata = metadata else {
+            // Uh-oh, an error occurred!
+            return
+          }
+          // Metadata contains file metadata such as size, content-type.
+          let size = metadata.size
+          // You can also access to download URL after upload.
+          storageRef.downloadURL { (url, error) in
+            guard let downloadURL = url else {
+              // Uh-oh, an error occurred!
+              return
+            }
+          }
+        }
+        
+    }
+    
+    func saveProfile(profileImageURL: URL, completion: @escaping ((_ success:Bool)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        let userObject = ["photoURL": profileImageURL.absoluteString] as [String:Any]
+        databaseRef.setValue(userObject) { error, ref in
+            completion(error == nil)
+        }
         
     }
     
 
-    @IBAction func uploadButtonTouched(_ sender: Any) {
-        performSegue(withIdentifier: "", sender: self)
-    }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.profileImageView.image = pickedImage
+            self.uploadProfileImage(pickedImage) { url in
+                if url != nil {
+                    let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                    changeRequest?.photoURL = url
+                    
+                    changeRequest?.commitChanges { error in
+                        if error == nil {
+                            print("User Profile Pic changed")
+                            self.saveProfile(profileImageURL: url!) { success in
+                                if success {
+                                    self.dismiss(animated: true, completion: nil)
+                                }
+                            
+                            }
+                        } else {
+                            print("error")
+                        }
+                    }
+                    
+                }
+                else {
+                    
+                }
+                
+                
+            }
+            
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+
