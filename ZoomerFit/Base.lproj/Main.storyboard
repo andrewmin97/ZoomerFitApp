@@ -355,15 +355,17 @@ Rating: 5/5</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-0g-qQh">
                                 <rect key="frame" x="122" y="276" width="175" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="blueCircleButton.png"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Profile" backgroundImage="blueCircleButton.png"/>
                                 <connections>
                                     <segue destination="rGt-vx-FMk" kind="showDetail" id="MN1-48-bwi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-xf-faN">
-                                <rect key="frame" x="122" y="464" width="175" height="173"/>
+                                <rect key="frame" x="125" y="464" width="173" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="blueCircleButton.png"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Upload Workout" backgroundImage="blueCircleButton.png"/>
                                 <connections>
                                     <segue destination="oAy-hC-lcj" kind="showDetail" id="2AH-Dl-drv"/>
                                 </connections>
