@@ -17,7 +17,7 @@ pod 'FirebaseUI'
 pod 'FBSDKLoginKit'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
-
+pod 'RSKImageCropper'
 # https://firebase.google.com/docs/ios/setup#available-pods
 
   target 'ZoomerFitTests' do

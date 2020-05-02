@@ -8,12 +8,14 @@
 
 import UIKit
 import Firebase
+import QuartzCore
 
 class ProfileViewController: UIViewController {
 
 
     @IBOutlet weak var profileImageView: UIImageView!
     
+    @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var tapToChangeProfileButton: UIButton!
     var imagePicker:UIImagePickerController!
     
@@ -23,11 +25,17 @@ class ProfileViewController: UIViewController {
         
         
         let user = Auth.auth().currentUser
+        self.UserName.text = user?.displayName
         guard let uid = Auth.auth().currentUser?.uid else { return}
         let storageRef = Storage.storage().reference().child("user/\(uid)")
         // Load the image using SDWebImage
         let placeholderImage = UIImage(named: "placeholder_profile.png")
         profileImageView.sd_setImage(with: storageRef, placeholderImage: placeholderImage)
+//        profileImageView.layer.borderWidth = 1
+//        profileImageView.layer.masksToBounds = false
+//        profileImageView.layer.borderColor = UIColor.black.cgColor
+//        profileImageView.layer.cornerRadius = profileImageView.frame.height/2
+//        profileImageView.clipsToBounds = true
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
@@ -72,6 +80,7 @@ class ProfileViewController: UIViewController {
         }
         
     }
+    
     
 
     
