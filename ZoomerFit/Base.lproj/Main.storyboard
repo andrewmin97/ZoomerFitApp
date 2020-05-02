@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,11 +18,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ir2-S3-Ysf" kind="relationship" relationship="viewControllers" id="OjG-ln-d96"/>
                         <segue destination="Evx-fI-6iW" kind="relationship" relationship="viewControllers" id="vFG-zQ-SEe"/>
                         <segue destination="pqK-dF-Nfd" kind="relationship" relationship="viewControllers" id="qt5-dH-7pq"/>
-                        <segue destination="fkX-KI-sda" kind="relationship" relationship="viewControllers" id="eHJ-oT-ikL"/>
-                        <segue destination="zyO-J7-1VA" kind="relationship" relationship="viewControllers" id="lW2-op-q5t"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Owh-qs-biP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -58,7 +55,6 @@
                         <viewLayoutGuide key="safeArea" id="dd6-0j-yCT"/>
                     </view>
                     <connections>
-                        <segue destination="uIy-Sa-7Dd" kind="show" identifier="goHome" id="GGw-p6-YcB"/>
                         <segue destination="iqY-zr-sNS" kind="show" identifier="toTab" id="H5C-N1-Nm3"/>
                     </connections>
                 </viewController>
@@ -71,7 +67,7 @@
             <objects>
                 <viewController id="uIy-Sa-7Dd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csD-FT-nRv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXX-ba-lPw">
@@ -242,14 +238,14 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gca-fL-WdC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="153"/>
+            <point key="canvasLocation" x="-3672" y="1756"/>
         </scene>
         <!--Home-->
         <scene sceneID="qhf-NB-6Vu">
             <objects>
                 <viewController id="Ir2-S3-Ysf" customClass="WelcomeViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="suM-Jr-nCr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-q4-CVR">
@@ -304,8 +300,9 @@ Rating: 5/5</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Z0-ebv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Z0-ebv">
                                 <rect key="frame" x="100" y="467" width="214" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Browse by Coach" backgroundImage="coachButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -314,8 +311,9 @@ Rating: 5/5</string>
                                     <action selector="coachButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="2tK-e8-oCw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-zZ-AkC">
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-zZ-AkC">
                                 <rect key="frame" x="100" y="213" width="214" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Browse by Exercise" backgroundImage="exerciseButton.png"/>
                                 <connections>
@@ -325,14 +323,6 @@ Rating: 5/5</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="TZ7-Z0-ebv" firstAttribute="leading" secondItem="U6c-yg-Ul9" secondAttribute="leading" constant="100" id="7cT-qH-ty3"/>
-                            <constraint firstItem="U6c-yg-Ul9" firstAttribute="trailing" secondItem="dn5-zZ-AkC" secondAttribute="trailing" constant="100" id="Qk7-zF-Qpp"/>
-                            <constraint firstItem="U6c-yg-Ul9" firstAttribute="trailing" secondItem="TZ7-Z0-ebv" secondAttribute="trailing" constant="100" id="fcq-iQ-Tzt"/>
-                            <constraint firstItem="dn5-zZ-AkC" firstAttribute="leading" secondItem="U6c-yg-Ul9" secondAttribute="leading" constant="100" id="mFD-k7-MxD"/>
-                            <constraint firstItem="dn5-zZ-AkC" firstAttribute="top" secondItem="U6c-yg-Ul9" secondAttribute="top" constant="150" id="pu5-0p-NQo"/>
-                            <constraint firstItem="U6c-yg-Ul9" firstAttribute="bottom" secondItem="TZ7-Z0-ebv" secondAttribute="bottom" constant="150" id="tcK-KT-plA"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U6c-yg-Ul9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="mQN-kS-bVy"/>
@@ -499,7 +489,7 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTu-ht-51W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3111.594202898551" y="1775.8928571428571"/>
+            <point key="canvasLocation" x="-2568" y="1756"/>
         </scene>
         <!--Title-->
         <scene sceneID="uJ3-44-KB6">
@@ -624,7 +614,7 @@ Rating: 5/5</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" metaFont="menu" size="14"/>
@@ -661,7 +651,7 @@ Rating: 5/5</string>
             <objects>
                 <viewController id="fkX-KI-sda" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7h-yX-oei">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="31P-gt-D5d"/>
@@ -677,7 +667,7 @@ Rating: 5/5</string>
             <objects>
                 <viewController id="zyO-J7-1VA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aav-Gd-HIj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="z4G-fI-lph"/>
@@ -692,10 +682,10 @@ Rating: 5/5</string>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
-        <image name="arms.png" width="348" height="303"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arms.png" width="98" height="85"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="athleanx.jpg" width="468" height="612"/>
-        <image name="back.png" width="320" height="280"/>
+        <image name="back.png" width="98" height="86"/>
         <image name="blueCircleButton.png" width="173" height="173"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="chest.png" width="391" height="339"/>
@@ -704,15 +694,15 @@ Rating: 5/5</string>
         <image name="coachButton.png" width="365" height="250"/>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="exerciseButton.png" width="366" height="250"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="placeholder_profile.png" width="900" height="940"/>
         <image name="popularitychart.png" width="347" height="258"/>
         <image name="sign in.png" width="1619" height="776"/>
-        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star" catalog="system" width="64" height="58"/>
         <image name="stomach.png" width="382" height="332"/>
         <image name="submit1.png" width="458" height="170"/>
         <image name="submit2.png" width="404" height="232"/>
