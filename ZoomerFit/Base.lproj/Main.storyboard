@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -304,22 +304,22 @@ Rating: 5/5</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-zZ-AkC">
-                                <rect key="frame" x="100" y="150" width="214" height="170"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Browse by Exercise" backgroundImage="exerciseButton.png"/>
-                                <connections>
-                                    <action selector="exerciseButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="IfO-p1-RAp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Z0-ebv">
-                                <rect key="frame" x="100" y="439" width="214" height="170"/>
+                                <rect key="frame" x="100" y="467" width="214" height="170"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Browse by Coach" backgroundImage="coachButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="coachButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="2tK-e8-oCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-zZ-AkC">
+                                <rect key="frame" x="100" y="213" width="214" height="170"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Browse by Exercise" backgroundImage="exerciseButton.png"/>
+                                <connections>
+                                    <action selector="exerciseButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="IfO-p1-RAp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -352,15 +352,26 @@ Rating: 5/5</string>
                                 <rect key="frame" x="87" y="79.5" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-0g-qQh">
-                                <rect key="frame" x="184" y="302" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-0g-qQh">
+                                <rect key="frame" x="122" y="276" width="175" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="blueCircleButton.png"/>
+                                <connections>
+                                    <segue destination="rGt-vx-FMk" kind="showDetail" id="MN1-48-bwi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-xf-faN">
+                                <rect key="frame" x="122" y="464" width="175" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="blueCircleButton.png"/>
+                                <connections>
+                                    <segue destination="oAy-hC-lcj" kind="showDetail" id="2AH-Dl-drv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O8-ZZ-ost">
-                                <rect key="frame" x="155" y="206" width="104" height="30"/>
+                                <rect key="frame" x="144" y="228" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tap to Change "/>
+                                <state key="normal" title="PROFILE SETTING"/>
                                 <connections>
                                     <action selector="changeProfile:" destination="pqK-dF-Nfd" eventType="touchUpInside" id="wrx-ER-kUU"/>
                                 </connections>
@@ -384,7 +395,7 @@ Rating: 5/5</string>
             <objects>
                 <viewController storyboardIdentifier="UserProfile" id="rGt-vx-FMk" customClass="UserProfileViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="py4-mV-hKH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-JI-gbC">
@@ -437,14 +448,14 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8k-jg-XkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1384.0579710144928" y="1616.5178571428571"/>
+            <point key="canvasLocation" x="-1780" y="1763"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="kkZ-Jx-Hpd">
             <objects>
                 <viewController id="oAy-hC-lcj" customClass="UploadViewController" customModule="ZoomerFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o0O-4r-8iw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
@@ -453,7 +464,7 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpf-eH-Tc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1384" y="2293"/>
+            <point key="canvasLocation" x="-1146" y="1763"/>
         </scene>
         <!--More-->
         <scene sceneID="ioa-l3-SYq">
@@ -491,23 +502,24 @@ Rating: 5/5</string>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="athleanx.jpg" width="468" height="612"/>
+        <image name="blueCircleButton.png" width="173" height="173"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
         <image name="clarkfir.jpg" width="425" height="531"/>
         <image name="coachButton.png" width="365" height="250"/>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
-        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="exerciseButton.png" width="366" height="250"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="placeholder_profile.png" width="900" height="940"/>
         <image name="popularitychart.png" width="347" height="258"/>
         <image name="sign in.png" width="1619" height="776"/>
-        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
 </document>

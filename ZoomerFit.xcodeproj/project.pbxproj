@@ -46,6 +46,7 @@
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		39CAD8D4245CE2640017F479 /* placeholder_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 39CAD8D3245CE2630017F479 /* placeholder_profile.png */; };
+		84BDA530245D523500956E3B /* blueCircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDA52F245D523500956E3B /* blueCircleButton.png */; };
 		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
 		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
 		D14F3EC86A05A1B40501B85B /* Pods_ZoomerFitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */; };
@@ -119,6 +120,7 @@
 		39CAD8D3245CE2630017F479 /* placeholder_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_profile.png; sourceTree = "<group>"; };
 		5F83B03E72A4AC36B4E6EC49 /* Pods-ZoomerFitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.release.xcconfig"; sourceTree = "<group>"; };
 		65729B0FC7AC2DCBDFD60F67 /* Pods-ZoomerFitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFitTests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFitTests/Pods-ZoomerFitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84BDA52F245D523500956E3B /* blueCircleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCircleButton.png; sourceTree = "<group>"; };
 		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E969D14A8D6757899774ECAC /* Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		06741DD5245AB67F009C5A26 /* Profile Page */ = {
 			isa = PBXGroup;
 			children = (
+				84BDA52F245D523500956E3B /* blueCircleButton.png */,
 				06741DDC245AB888009C5A26 /* blueCircleButton.png */,
 			);
 			path = "Profile Page";
@@ -445,6 +448,7 @@
 				06741DBD245A205B009C5A26 /* ZoomerFitLogo.png in Resources */,
 				06741D9E2456295D009C5A26 /* ebenezer samuel.jpeg in Resources */,
 				06741DD2245AAE01009C5A26 /* coachButton.png in Resources */,
+				84BDA530245D523500956E3B /* blueCircleButton.png in Resources */,
 				06741DB3245A1F09009C5A26 /* HomeIconBlack.png in Resources */,
 				06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */,
 				06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */,
