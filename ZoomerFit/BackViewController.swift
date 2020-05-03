@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class BackViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView:UITableView!
@@ -29,8 +30,8 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
     func getData()
     {
         let db = Firestore.firestore()
-                
-        db.collection("Workouts").whereField("muscleGroups", isEqualTo: "Chest").getDocuments { (snapshot, error) in
+        _ = muscleName
+        db.collection("Workouts").whereField("muscleGroups", isEqualTo: muscleName).getDocuments { (snapshot, error) in
             
             if error != nil || snapshot == nil
             {
