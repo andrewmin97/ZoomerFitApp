@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -435,31 +435,6 @@ Rating: 5/5</string>
             </objects>
             <point key="canvasLocation" x="-4452.1739130434789" y="2734.8214285714284"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6oh-3q-xl7">
-            <objects>
-                <viewController id="HLj-wj-VVa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uqo-0I-Kiw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QY-VC-M50">
-                                <rect key="frame" x="186" y="53" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="aIG-gd-9up"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="6MH-wm-XdA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpC-64-S7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3384" y="2735"/>
-        </scene>
         <!--Muscle View Controller-->
         <scene sceneID="V5g-3k-brs">
             <objects>
@@ -503,7 +478,7 @@ Rating: 5/5</string>
                                 </state>
                                 <connections>
                                     <action selector="armsButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="6O6-5A-ccE"/>
-                                    <segue destination="HLj-wj-VVa" kind="show" id="HwQ-WU-p1i"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="xDs-XV-aXN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgE-1D-0Qj">
@@ -515,6 +490,7 @@ Rating: 5/5</string>
                                 </state>
                                 <connections>
                                     <action selector="stomachButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="QgZ-dj-uBJ"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="CJS-7V-XXi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-cY-lDK">
@@ -998,11 +974,15 @@ Rating: 5/5</string>
             <point key="canvasLocation" x="-586.95652173913049" y="968.97321428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mhj-Wy-6ck"/>
+        <segue reference="WJi-Ep-AVA"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
         <image name="arms.png" width="98" height="85"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="athleanx.jpg" width="468" height="612"/>
         <image name="back.png" width="98" height="86"/>
         <image name="blueCircleButton.png" width="173" height="173"/>
@@ -1013,23 +993,19 @@ Rating: 5/5</string>
         <image name="coachButton.png" width="365" height="250"/>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
-        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="exerciseButton.png" width="366" height="250"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="placeholder_profile.png" width="900" height="940"/>
         <image name="popularitychart.png" width="347" height="258"/>
         <image name="sign in.png" width="1619" height="776"/>
-        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="stomach.png" width="382" height="332"/>
         <image name="submit1.png" width="458" height="170"/>
         <image name="submit2.png" width="404" height="232"/>
         <image name="trainer.png" width="546" height="467"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="9Rj-cb-JXX"/>
-        <segue reference="Y4i-ks-bVW"/>
-    </inferredMetricsTieBreakers>
 </document>
