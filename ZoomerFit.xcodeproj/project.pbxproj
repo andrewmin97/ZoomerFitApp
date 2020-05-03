@@ -44,7 +44,6 @@
 		06741DE5245AC1C8009C5A26 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE4245AC1C8009C5A26 /* UploadViewController.swift */; };
 		06A48475245E0D0D0062B0F3 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A48474245E0D0C0062B0F3 /* back.png */; };
 		06A48477245E0D150062B0F3 /* arms.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A48476245E0D150062B0F3 /* arms.png */; };
-		06A48479245E38960062B0F3 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A48478245E38960062B0F3 /* WorkoutViewController.swift */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -126,7 +125,6 @@
 		06741DE4245AC1C8009C5A26 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		06A48474245E0D0C0062B0F3 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		06A48476245E0D150062B0F3 /* arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arms.png; sourceTree = "<group>"; };
-		06A48478245E38960062B0F3 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				06741DE0245ABCB6009C5A26 /* ProfileViewController.swift */,
 				06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */,
 				06741DE4245AC1C8009C5A26 /* UploadViewController.swift */,
-				06A48478245E38960062B0F3 /* WorkoutViewController.swift */,
 				06741D632456286B009C5A26 /* Main.storyboard */,
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
@@ -672,7 +669,6 @@
 				06741DE1245ABCB6009C5A26 /* ProfileViewController.swift in Sources */,
 				06741DE5245AC1C8009C5A26 /* UploadViewController.swift in Sources */,
 				06741DDF245ABB1D009C5A26 /* SearchViewController.swift in Sources */,
-				06A48479245E38960062B0F3 /* WorkoutViewController.swift in Sources */,
 				06741DE3245AC1B5009C5A26 /* UserProfileViewController.swift in Sources */,
 				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
 				06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */,
