@@ -43,6 +43,7 @@
 		06741DE3245AC1B5009C5A26 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */; };
 		06741DE5245AC1C8009C5A26 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE4245AC1C8009C5A26 /* UploadViewController.swift */; };
 		06816D66245E65BA0023E796 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06816D65245E65BA0023E796 /* WorkoutViewController.swift */; };
+		06816D6C245F5CA60023E796 /* MuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06816D6B245F5CA60023E796 /* MuscleViewController.swift */; };
 		06A48475245E0D0D0062B0F3 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A48474245E0D0C0062B0F3 /* back.png */; };
 		06A48477245E0D150062B0F3 /* arms.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A48476245E0D150062B0F3 /* arms.png */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -127,6 +128,7 @@
 		06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		06741DE4245AC1C8009C5A26 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		06816D65245E65BA0023E796 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		06816D6B245F5CA60023E796 /* MuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewController.swift; sourceTree = "<group>"; };
 		06A48474245E0D0C0062B0F3 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		06A48476245E0D150062B0F3 /* arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arms.png; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 				06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */,
 				06741DE4245AC1C8009C5A26 /* UploadViewController.swift */,
 				06741D632456286B009C5A26 /* Main.storyboard */,
+				06816D6B245F5CA60023E796 /* MuscleViewController.swift */,
 				06816D65245E65BA0023E796 /* WorkoutViewController.swift */,
 				846C73B1245F053000456B5F /* Health.swift */,
 				846C73B3245F057600456B5F /* BackViewController.swift */,
@@ -684,6 +687,7 @@
 				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
 				06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */,
 				846C73B4245F057600456B5F /* BackViewController.swift in Sources */,
+				06816D6C245F5CA60023E796 /* MuscleViewController.swift in Sources */,
 				06741D5E2456286B009C5A26 /* AppDelegate.swift in Sources */,
 				06741D602456286B009C5A26 /* SceneDelegate.swift in Sources */,
 			);
