@@ -492,7 +492,7 @@ Rating: 5/5</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Did you guse any weights?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-DY-KE1">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Did you use any weights?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-DY-KE1">
                                                 <rect key="frame" x="81" y="210" width="251" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -517,7 +517,7 @@ Rating: 5/5</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="write down any notes for yourself here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-QL-4QP">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="memo" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-QL-4QP">
                                                 <rect key="frame" x="81" y="487" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -529,11 +529,17 @@ Rating: 5/5</string>
                                                 <rect key="frame" x="131" y="650" width="34" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="saveButtonPressed:" destination="Tw5-3A-xbb" eventType="touchUpInside" id="bsg-WQ-vvq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-fH-TRK">
                                                 <rect key="frame" x="226" y="650" width="36" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearButtonPressed:" destination="Tw5-3A-xbb" eventType="touchUpInside" id="Gqw-ah-868"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-gX-vPb">
                                                 <rect key="frame" x="20" y="161" width="361" height="327"/>
@@ -879,10 +885,10 @@ Rating: 5/5</string>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
-        <image name="arms.png" width="98" height="85"/>
+        <image name="arms.png" width="348" height="303"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="athleanx.jpg" width="468" height="612"/>
-        <image name="back.png" width="98" height="86"/>
+        <image name="back.png" width="320" height="280"/>
         <image name="blueCircleButton.png" width="173" height="173"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="chest.png" width="391" height="339"/>

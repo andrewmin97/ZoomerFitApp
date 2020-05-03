@@ -29,10 +29,18 @@ class WorkoutViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
 //Methods
-    
+//viewdidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
     //initialize to description
+        //check for data in database.
+        //if empty,
+        memoText.text = "Write down any notes for yourself here!";
+        memoText.textColor = UIColor.lightGray;
+    //these should be pulled from database
+        //weightText.text = "";
+        //repText.text = "";
+        //durationText.text = "";
         segcontrolBar.selectedSegmentIndex = 0
     //hide set info
         weightLabel.isHidden = true;
@@ -74,6 +82,15 @@ class WorkoutViewController: UIViewController {
             clearButton.isHidden = true;
         } //outside seg 0
         else if (segcontrolBar.selectedSegmentIndex == 1){
+                //check for data in database.
+                //if empty,
+                memoText.text = "Write down any notes for yourself here!";
+                memoText.textColor = UIColor.lightGray;
+            //these should be pulled from database
+                //weightText.text = "";
+                //repText.text = "";
+                //durationText.text = "";
+            
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
             weightLabel.isHidden = false;
@@ -88,6 +105,15 @@ class WorkoutViewController: UIViewController {
             clearButton.isHidden = false;
         }//outside seg 1
         else if (segcontrolBar.selectedSegmentIndex == 2){
+                //check for data in database.
+                //if empty,
+                memoText.text = "Write down any notes for yourself here!";
+                memoText.textColor = UIColor.lightGray;
+            //these should be pulled from database
+                //weightText.text = "";
+                //repText.text = "";
+                //durationText.text = "";
+            
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
             weightLabel.isHidden = false;
@@ -102,6 +128,15 @@ class WorkoutViewController: UIViewController {
             clearButton.isHidden = false;
         }//outside seg 2
         else if (segcontrolBar.selectedSegmentIndex == 3){
+                //check for data in database.
+                //if empty,
+                memoText.text = "Write down any notes for yourself here!";
+                memoText.textColor = UIColor.lightGray;
+            //these should be pulled from database
+                //weightText.text = "";
+                //repText.text = "";
+                //durationText.text = "";
+            
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
             weightLabel.isHidden = false;
@@ -119,6 +154,20 @@ class WorkoutViewController: UIViewController {
     
     @IBAction func backButtonPressed(_ sender: Any) {
         self.navigationController?.popViewController(animated: true);
+    }
+    
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        //this should save all data in current textboxes to array of corresponding seg
+        
+        
+    }
+    
+    @IBAction func clearButtonPressed(_ sender: Any) {
+        weightText.text = "";
+        repText.text = "";
+        durationText.text = "";
+        memoText.text = "";
     }
     /*
     // MARK: - Navigation
