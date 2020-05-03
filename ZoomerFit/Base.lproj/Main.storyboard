@@ -624,8 +624,8 @@ Rating: 5/5</string>
                                     <action selector="submitPhoto:" destination="oAy-hC-lcj" eventType="touchUpInside" id="caB-fi-6st"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-Ap-rdd">
-                                <rect key="frame" x="61" y="302" width="255" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-Ap-rdd">
+                                <rect key="frame" x="53" y="302" width="259" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -647,7 +647,7 @@ Rating: 5/5</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h79-ed-jFm">
-                                <rect key="frame" x="158" y="736" width="86" height="47"/>
+                                <rect key="frame" x="159" y="726" width="86" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SUBMIT">
@@ -655,6 +655,7 @@ Rating: 5/5</string>
                                 </state>
                                 <connections>
                                     <action selector="uploadWorkout:" destination="oAy-hC-lcj" eventType="touchUpInside" id="JZm-Jm-FdO"/>
+                                    <segue destination="sDq-Nw-pcB" kind="show" id="FxV-wy-6CO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-Hq-N3n">
@@ -707,13 +708,6 @@ Rating: 5/5</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill out all details." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAR-Tq-vOV">
-                                <rect key="frame" x="110" y="707" width="183" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
@@ -726,10 +720,8 @@ Rating: 5/5</string>
                         <outlet property="submitButton" destination="h79-ed-jFm" id="xwi-MG-9gm"/>
                         <outlet property="submitImage" destination="bgd-r6-B5G" id="IEf-Jw-pZA"/>
                         <outlet property="submitVideo" destination="ZUp-Hq-N3n" id="IL1-CL-C5c"/>
-                        <outlet property="warningText" destination="hAR-Tq-vOV" id="t46-zd-pLp"/>
                         <outlet property="workoutDescription" destination="Xgz-CR-eY1" id="kN2-z6-OUK"/>
                         <outlet property="workoutName" destination="qdz-Ap-rdd" id="jJ0-Tc-1J5"/>
-                        <segue destination="sDq-Nw-pcB" kind="show" identifier="toWorkout" id="Mhj-Wy-6ck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpf-eH-Tc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -950,7 +942,7 @@ Rating: 5/5</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mhj-Wy-6ck"/>
+        <segue reference="9Rj-cb-JXX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
