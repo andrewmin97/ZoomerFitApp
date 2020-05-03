@@ -125,7 +125,8 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:"BasicCell", for: indexPath)
         
-        let titleLabel = cell.viewWithTag(1) as! UILabel
+        let titleLabel = cell.viewWithTag(1) as! UILabel //tags are not resusable
+        //could create customize ui table  view cell class
         titleLabel.text = backArray[indexPath.row].title
         
         let imageView = cell.viewWithTag(2) as! UIImageView
