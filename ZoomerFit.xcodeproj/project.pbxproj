@@ -58,6 +58,8 @@
 		84044BB0245E033300B8394B /* shoulder.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BA9245E033100B8394B /* shoulder.png */; };
 		84044BB1245E033300B8394B /* calves.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BAA245E033200B8394B /* calves.png */; };
 		84044BB2245E033300B8394B /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BAB245E033200B8394B /* legs.png */; };
+		846C73B2245F053000456B5F /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C73B1245F053000456B5F /* Health.swift */; };
+		846C73B4245F057600456B5F /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C73B3245F057600456B5F /* BackViewController.swift */; };
 		84BDA530245D523500956E3B /* blueCircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDA52F245D523500956E3B /* blueCircleButton.png */; };
 		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
 		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
@@ -144,6 +146,8 @@
 		84044BA9245E033100B8394B /* shoulder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoulder.png; sourceTree = "<group>"; };
 		84044BAA245E033200B8394B /* calves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calves.png; sourceTree = "<group>"; };
 		84044BAB245E033200B8394B /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
+		846C73B1245F053000456B5F /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		846C73B3245F057600456B5F /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
 		84BDA52F245D523500956E3B /* blueCircleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCircleButton.png; sourceTree = "<group>"; };
 		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +224,8 @@
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
 				06741D6B24562870009C5A26 /* Info.plist */,
 				06741DB4245A1F74009C5A26 /* Pictures */,
+				846C73B1245F053000456B5F /* Health.swift */,
+				846C73B3245F057600456B5F /* BackViewController.swift */,
 			);
 			path = ZoomerFit;
 			sourceTree = "<group>";
@@ -672,10 +678,12 @@
 				06741DE1245ABCB6009C5A26 /* ProfileViewController.swift in Sources */,
 				06741DE5245AC1C8009C5A26 /* UploadViewController.swift in Sources */,
 				06741DDF245ABB1D009C5A26 /* SearchViewController.swift in Sources */,
+				846C73B2245F053000456B5F /* Health.swift in Sources */,
 				06816D66245E65BA0023E796 /* WorkoutViewController.swift in Sources */,
 				06741DE3245AC1B5009C5A26 /* UserProfileViewController.swift in Sources */,
 				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
 				06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */,
+				846C73B4245F057600456B5F /* BackViewController.swift in Sources */,
 				06741D5E2456286B009C5A26 /* AppDelegate.swift in Sources */,
 				06741D602456286B009C5A26 /* SceneDelegate.swift in Sources */,
 			);
