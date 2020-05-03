@@ -12,6 +12,7 @@ import Firebase
 
 class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var photoSuccess: UILabel!
     @IBOutlet weak var workoutDescription: UITextView!
     @IBOutlet weak var workoutName: UITextField!
     
@@ -32,12 +33,13 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let user = Auth.auth().currentUser
         // Get a reference to the storage service using the default Firebase App
         let storage = Storage.storage()
-        
+        self.photoSuccess.isHidden = true
         muscleGroups = ["Back", "Arms", "Stomach", "Chest"]
         // Create a storage reference from our storage service
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
+        imagePicker.mediaTypes = ["public.image", "public.movie"]
         imagePicker.delegate = self
     
 
@@ -190,5 +192,6 @@ func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMe
         
     }
     picker.dismiss(animated: true, completion: nil)
+    self.photoSuccess.isHidden = false
 }
 }
