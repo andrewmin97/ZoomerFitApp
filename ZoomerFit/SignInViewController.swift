@@ -12,7 +12,7 @@ import FBSDKLoginKit
 import Firebase
 import GoogleSignIn
 
-class ViewController: UIViewController, LoginButtonDelegate {
+class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,12 +71,6 @@ class ViewController: UIViewController, LoginButtonDelegate {
         present(authViewController!, animated: true, completion: nil)
     }
     
-}
-
-
-
-extension ViewController: FUIAuthDelegate {
-    
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         
         guard error == nil else {
@@ -84,9 +78,16 @@ extension ViewController: FUIAuthDelegate {
             return
         }
         //authDataResult?.user.uid
-        //performSegue(withIdentifier: "goHome", sender: self)
-        performSegue(withIdentifier: "toTab", sender: self)
+        //performSegue(withIdentifier: "toTab", sender: self) //no good
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "tabBarVC")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
     }
 }
+
+
+
+
 
 
