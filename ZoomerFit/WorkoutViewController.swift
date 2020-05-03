@@ -157,11 +157,11 @@ class WorkoutViewController: UIViewController {
     }
     
     
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        //this should save all data in current textboxes to array of corresponding seg
-        
-        
-    }
+//    @IBAction func saveButtonPressed(_ sender: Any) {
+//        //this should save all data in current textboxes to array of corresponding seg
+//
+//
+//    }
     
     @IBAction func clearButtonPressed(_ sender: Any) {
         weightText.text = "";

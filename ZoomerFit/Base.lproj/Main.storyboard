@@ -557,7 +557,7 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8k-jg-XkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1864" y="1791"/>
+            <point key="canvasLocation" x="-1738" y="1756"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="kkZ-Jx-Hpd">
@@ -730,15 +730,16 @@ Rating: 5/5</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEI-lN-Fo6">
-                                        <rect key="frame" x="0.0" y="0.0" width="403" height="808"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="494" height="808"/>
                                         <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-GJ-7Sf">
-                                                <rect key="frame" x="20" y="100" width="363" height="32"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-GJ-7Sf">
+                                                <rect key="frame" x="20" y="100" width="361" height="32"/>
                                                 <segments>
                                                     <segment title="Description"/>
                                                     <segment title="Set 1"/>
+                                                    <segment title="Set 2"/>
                                                     <segment title="Set 3"/>
-                                                    <segment title="Set 3"/>
+                                                    <segment title="Done"/>
                                                 </segments>
                                                 <connections>
                                                     <action selector="segControlChanged:" destination="sDq-Nw-pcB" eventType="valueChanged" id="qtB-q9-eQt"/>
@@ -822,7 +823,7 @@ Rating: 5/5</string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-XB-kGl">
-                                                <rect key="frame" x="20" y="508" width="363" height="280"/>
+                                                <rect key="frame" x="20" y="508" width="454" height="280"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="XhT-g9-k0i"/>
                                                 </constraints>
@@ -896,16 +897,16 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOm-Ag-uis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2087" y="2735"/>
+            <point key="canvasLocation" x="-2088.4057971014495" y="2734.8214285714284"/>
         </scene>
     </scenes>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
-        <image name="arms.png" width="98" height="85"/>
+        <image name="arms.png" width="348" height="303"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="athleanx.jpg" width="468" height="612"/>
-        <image name="back.png" width="98" height="86"/>
+        <image name="back.png" width="320" height="280"/>
         <image name="blueCircleButton.png" width="173" height="173"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="chest.png" width="391" height="339"/>
