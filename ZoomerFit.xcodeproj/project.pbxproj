@@ -219,13 +219,13 @@
 				06741DE2245AC1B5009C5A26 /* UserProfileViewController.swift */,
 				06741DE4245AC1C8009C5A26 /* UploadViewController.swift */,
 				06741D632456286B009C5A26 /* Main.storyboard */,
+				846C73B3245F057600456B5F /* BackViewController.swift */,
+				846C73B1245F053000456B5F /* Health.swift */,
 				06816D65245E65BA0023E796 /* WorkoutViewController.swift */,
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
 				06741D6B24562870009C5A26 /* Info.plist */,
 				06741DB4245A1F74009C5A26 /* Pictures */,
-				846C73B1245F053000456B5F /* Health.swift */,
-				846C73B3245F057600456B5F /* BackViewController.swift */,
 			);
 			path = ZoomerFit;
 			sourceTree = "<group>";

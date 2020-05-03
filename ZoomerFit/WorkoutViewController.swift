@@ -27,12 +27,15 @@ class WorkoutViewController: UIViewController {
 //Display for Description
     @IBOutlet weak var descriptionImage: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var workoutTitle: UILabel!
+  //  var workoutObject = Health()
     
 //Methods
 //viewdidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-    //initialize to description
+       // self.workoutTitle.text = workoutObject.title
+        //initialize to description
         //check for data in database.
         //if empty,
         memoText.text = "Write down any notes for yourself here!";

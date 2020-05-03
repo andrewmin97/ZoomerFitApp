@@ -414,9 +414,6 @@ Rating: 5/5</string>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="sDq-Nw-pcB" kind="show" id="9Rj-cb-JXX"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -430,11 +427,12 @@ Rating: 5/5</string>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="gYW-Hg-lqo" id="wLj-bT-Pjt"/>
+                        <segue destination="sDq-Nw-pcB" kind="show" identifier="toWorkoutVC" id="kNX-H7-fB7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nkd-nv-1wh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4452.1739130434789" y="2734.8214285714284"/>
+            <point key="canvasLocation" x="-4329" y="2735"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6oh-3q-xl7">
@@ -455,6 +453,7 @@ Rating: 5/5</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aIG-gd-9up"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jbb-NM-b3T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZpC-64-S7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -646,22 +645,6 @@ Rating: 5/5</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h79-ed-jFm">
-                                <rect key="frame" x="158" y="736" width="86" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="uploadWorkout:" destination="oAy-hC-lcj" eventType="touchUpInside" id="JZm-Jm-FdO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-Hq-N3n">
-                                <rect key="frame" x="67" y="658" width="94" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="submit2.png"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Muscle Groups Worked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKT-cK-YS9">
                                 <rect key="frame" x="59" y="344" width="179" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -708,12 +691,23 @@ Rating: 5/5</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please fill out all details." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAR-Tq-vOV">
-                                <rect key="frame" x="110" y="707" width="183" height="21"/>
+                                <rect key="frame" x="110" y="668" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h79-ed-jFm">
+                                <rect key="frame" x="158" y="697" width="86" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadWorkout:" destination="oAy-hC-lcj" eventType="touchUpInside" id="JZm-Jm-FdO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
@@ -725,7 +719,6 @@ Rating: 5/5</string>
                         <outlet property="selectedMuscles" destination="GVy-xG-vHx" id="Up3-gz-974"/>
                         <outlet property="submitButton" destination="h79-ed-jFm" id="xwi-MG-9gm"/>
                         <outlet property="submitImage" destination="bgd-r6-B5G" id="IEf-Jw-pZA"/>
-                        <outlet property="submitVideo" destination="ZUp-Hq-N3n" id="IL1-CL-C5c"/>
                         <outlet property="warningText" destination="hAR-Tq-vOV" id="t46-zd-pLp"/>
                         <outlet property="workoutDescription" destination="Xgz-CR-eY1" id="kN2-z6-OUK"/>
                         <outlet property="workoutName" destination="qdz-Ap-rdd" id="jJ0-Tc-1J5"/>
@@ -888,6 +881,13 @@ Rating: 5/5</string>
                                                     <action selector="segControlChanged:" destination="sDq-Nw-pcB" eventType="valueChanged" id="qtB-q9-eQt"/>
                                                 </connections>
                                             </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAH-5N-Ngj">
+                                                <rect key="frame" x="185" y="62" width="34" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -940,17 +940,18 @@ Rating: 5/5</string>
                         <outlet property="repText" destination="fed-ds-19e" id="EEY-vH-0p6"/>
                         <outlet property="saveButton" destination="Zlj-CH-9pQ" id="ccc-cb-C90"/>
                         <outlet property="segcontrolBar" destination="xRm-GJ-7Sf" id="Pi4-Qe-OPf"/>
+                        <outlet property="title" destination="NAH-5N-Ngj" id="ZcG-dM-urE"/>
                         <outlet property="weightLabel" destination="wkP-8Z-Ntf" id="mmv-49-wkq"/>
                         <outlet property="weightText" destination="tSb-lJ-PsZ" id="erw-DA-Y4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOm-Ag-uis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2071" y="3321"/>
+            <point key="canvasLocation" x="-2452" y="3548"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mhj-Wy-6ck"/>
+        <segue reference="kNX-H7-fB7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
@@ -978,7 +979,6 @@ Rating: 5/5</string>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="stomach.png" width="382" height="332"/>
         <image name="submit1.png" width="458" height="170"/>
-        <image name="submit2.png" width="404" height="232"/>
         <image name="trainer.png" width="546" height="467"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
