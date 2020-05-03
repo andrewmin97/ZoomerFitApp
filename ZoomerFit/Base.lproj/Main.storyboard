@@ -587,7 +587,7 @@ Rating: 5/5</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-r6-B5G">
-                                <rect key="frame" x="132" y="581" width="106" height="37"/>
+                                <rect key="frame" x="61" y="598" width="106" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="submit1.png"/>
                                 <connections>
@@ -625,10 +625,11 @@ Rating: 5/5</string>
                                 </state>
                                 <connections>
                                     <action selector="uploadWorkout:" destination="oAy-hC-lcj" eventType="touchUpInside" id="JZm-Jm-FdO"/>
+                                    <segue destination="sDq-Nw-pcB" kind="show" id="FxV-wy-6CO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUp-Hq-N3n">
-                                <rect key="frame" x="138" y="626" width="94" height="44"/>
+                                <rect key="frame" x="67" y="658" width="94" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="submit2.png"/>
                             </button>
@@ -670,6 +671,13 @@ Rating: 5/5</string>
                                 <rect key="frame" x="1" y="816" width="66" height="26"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photo Succesfully Uploaded!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqK-8j-4df">
+                                <rect key="frame" x="164" y="609" width="152" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="81Y-pr-CwG"/>
@@ -677,6 +685,7 @@ Rating: 5/5</string>
                     <navigationItem key="navigationItem" id="sbr-Sm-VYp"/>
                     <connections>
                         <outlet property="muscleSelector" destination="2L6-f7-8ig" id="le1-7a-hiv"/>
+                        <outlet property="photoSuccess" destination="wqK-8j-4df" id="fhL-wP-K4m"/>
                         <outlet property="selectedMuscles" destination="GVy-xG-vHx" id="Up3-gz-974"/>
                         <outlet property="submitButton" destination="h79-ed-jFm" id="xwi-MG-9gm"/>
                         <outlet property="submitImage" destination="bgd-r6-B5G" id="IEf-Jw-pZA"/>
@@ -902,6 +911,9 @@ Rating: 5/5</string>
             <point key="canvasLocation" x="-2087" y="2735"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FxV-wy-6CO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
