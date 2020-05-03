@@ -56,7 +56,9 @@ class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
                 print(user)
             }
         })
-        performSegue(withIdentifier: "toTab", sender: self)
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "tabBarVC")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 
     @IBAction func SignInPressed(_ sender: Any) {
