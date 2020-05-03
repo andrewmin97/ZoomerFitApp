@@ -33,15 +33,30 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let storage = Storage.storage()
         muscleGroups = ["Back", "Arms", "Stomach", "Chest"]
         // Create a storage reference from our storage service
+ 
+    
+
     }
     
     
     @IBAction func uploadWorkout(_ sender: Any) {
-        let title = self.workoutName.text
-        let muscleGroups = self.selectedMuscles.text
-        let description = self.workoutDescription.text
-        let coach = Auth.auth().currentUser
-        let storageRef = Storage.storage().reference().child("workout/\(coach)/\(title)")
+        
+        print("UPLOAD CALLED")
+        var title = self.workoutName.text
+        var muscleGroups = self.selectedMuscles.text
+        var description = self.workoutDescription.text
+        var coach = Auth.auth().currentUser?.displayName
+        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "Description":description, "coach": coach]
+        let db = Firestore.firestore()
+        var ref: DocumentReference? = nil
+        ref = db.collection("Workouts").addDocument(data: workout) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        
         
     }
     
