@@ -12,6 +12,7 @@ import Firebase
 
 class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var warningText: UILabel!
     @IBOutlet weak var photoSuccess: UILabel!
     @IBOutlet weak var workoutDescription: UITextView!
     @IBOutlet weak var workoutName: UITextField!
@@ -41,12 +42,20 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = ["public.image", "public.movie"]
         imagePicker.delegate = self
-    
+        warningText.isHidden = true
 
     }
     
     
     @IBAction func uploadWorkout(_ sender: Any) {
+        print(workoutDescription.text)
+        print(workoutName.text)
+        print(selectedMuscles.text)
+        
+        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
+            warningText.isHidden = false
+            return
+        }
         
         print("UPLOAD CALLED")
         guard let uid = Auth.auth().currentUser?.uid else { return}
@@ -67,7 +76,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 print("Document added with ID: \(ref!.documentID)")
             }
         }
-        
+        performSegue(withIdentifier: "toWorkout", sender: nil)
         
     }
     
