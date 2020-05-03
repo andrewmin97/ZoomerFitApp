@@ -35,7 +35,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Get a reference to the storage service using the default Firebase App
         let storage = Storage.storage()
         self.photoSuccess.isHidden = true
-        muscleGroups = ["Back", "Arms", "Stomach", "Chest"]
+        muscleGroups = ["Back", "Arms", "Stomach", "Chest", "Shoulders", "Legs", "Calves", "Full Body"]
         // Create a storage reference from our storage service
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true

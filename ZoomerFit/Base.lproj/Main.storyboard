@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0e-8z-4s9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -301,7 +301,7 @@ Rating: 5/5</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Z0-ebv">
                                 <rect key="frame" x="100" y="467" width="214" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Browse by Coach" backgroundImage="coachButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -312,7 +312,7 @@ Rating: 5/5</string>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-zZ-AkC">
                                 <rect key="frame" x="100" y="213" width="214" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Browse by Exercise" backgroundImage="exerciseButton.png"/>
                                 <connections>
                                     <action selector="exerciseButton:" destination="Evx-fI-6iW" eventType="touchUpInside" id="IfO-p1-RAp"/>
@@ -443,23 +443,16 @@ Rating: 5/5</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WHAT WILL YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDA-qB-92Q">
-                                <rect key="frame" x="51" y="52" width="228" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WORK OUT?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-NS-k8O">
-                                <rect key="frame" x="51" y="96" width="172" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="34" y="138" width="172" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GS4-DK-u6T">
-                                <rect key="frame" x="43" y="180" width="147" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="44" y="214" width="147" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="BACK" backgroundImage="back.png">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -470,8 +463,8 @@ Rating: 5/5</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-Xr-1yG">
-                                <rect key="frame" x="212" y="180" width="144" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="224" y="213" width="144" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="ARMS" backgroundImage="arms.png">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -482,20 +475,21 @@ Rating: 5/5</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgE-1D-0Qj">
-                                <rect key="frame" x="43" y="330" width="147" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="44" y="364" width="147" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="STOMACH" backgroundImage="stomach.png">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="stomachButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="QgZ-dj-uBJ"/>
-                                    <segue destination="ncp-MA-roa" kind="show" id="CJS-7V-XXi"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="gOd-2w-LmC"/>
+                            
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-cY-lDK">
-                                <rect key="frame" x="209" y="330" width="147" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="221" y="363" width="147" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="CHEST" backgroundImage="chest.png">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -505,6 +499,59 @@ Rating: 5/5</string>
                                     <segue destination="ncp-MA-roa" kind="show" id="Y4i-ks-bVW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VW-WG-yJk">
+                                <rect key="frame" x="44" y="512" width="147" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="SHOULDERS" backgroundImage="shoulder.png"/>
+                                <connections>
+                                    <action selector="shouldersButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="QAK-Dk-MQq"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="hKW-Gk-CGu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXW-aC-pJZ">
+                                <rect key="frame" x="221" y="510" width="147" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="LEGS" backgroundImage="legs.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="legsButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="6NL-gT-MgT"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="EyT-Sx-pj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFP-nO-lnK">
+                                <rect key="frame" x="44" y="657" width="147" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="CALVES" backgroundImage="calves.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calvesButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="ZWM-eZ-vo0"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="TTf-0a-6yz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opd-Fw-1zE">
+                                <rect key="frame" x="223" y="656" width="147" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="FULL BODY" backgroundImage="full body.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullbodyButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="4eC-rq-ph0"/>
+                                    <segue destination="ncp-MA-roa" kind="show" id="CL5-x1-IpE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WHAT WILL YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDA-qB-92Q">
+                                <rect key="frame" x="34" y="96" width="228" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aPS-VS-fWq"/>
@@ -513,7 +560,7 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTu-ht-51W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2568" y="1756"/>
+            <point key="canvasLocation" x="-2568.1159420289855" y="1755.8035714285713"/>
         </scene>
         <!--Title-->
         <scene sceneID="uJ3-44-KB6">
@@ -966,14 +1013,19 @@ Rating: 5/5</string>
             <point key="canvasLocation" x="-586.95652173913049" y="968.97321428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mhj-Wy-6ck"/>
+        <segue reference="Y4i-ks-bVW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="The-Rock-Dwayne-Johnson-gym-9.jpg" width="1080" height="1080"/>
         <image name="ZoomerFitLogo.png" width="1002" height="267"/>
-        <image name="arms.png" width="98" height="85"/>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arms.png" width="348" height="303"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="athleanx.jpg" width="468" height="612"/>
-        <image name="back.png" width="98" height="86"/>
+        <image name="back.png" width="320" height="280"/>
         <image name="blueCircleButton.png" width="173" height="173"/>
+        <image name="calves.png" width="432" height="373"/>
         <image name="carousel1.png" width="447" height="294"/>
         <image name="chest.png" width="391" height="339"/>
         <image name="christianfleenor.jpg" width="456.75" height="444.75"/>
@@ -981,21 +1033,25 @@ Rating: 5/5</string>
         <image name="coachButton.png" width="365" height="250"/>
         <image name="diamondcut.jpeg" width="225" height="225"/>
         <image name="ebenezer samuel.jpeg" width="201" height="251"/>
-        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="exerciseButton.png" width="366" height="250"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="full body.png" width="340" height="297"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="legs.png" width="352" height="305"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="placeholder_profile.png" width="900" height="940"/>
         <image name="popularitychart.png" width="347" height="258"/>
+        <image name="shoulder.png" width="360" height="312"/>
         <image name="sign in.png" width="1619" height="776"/>
-        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="stomach.png" width="382" height="332"/>
         <image name="submit1.png" width="458" height="170"/>
         <image name="submit2.png" width="404" height="232"/>
         <image name="trainer.png" width="546" height="467"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
+
     <inferredMetricsTieBreakers>
         <segue reference="Mhj-Wy-6ck"/>
         <segue reference="WJi-Ep-AVA"/>
