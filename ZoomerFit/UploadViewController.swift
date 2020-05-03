@@ -25,15 +25,20 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var toolBar = UIToolbar()
     var picker  = UIPickerView()
     var muscleGroups = [String]()
+    var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let user = Auth.auth().currentUser
         // Get a reference to the storage service using the default Firebase App
         let storage = Storage.storage()
+        
         muscleGroups = ["Back", "Arms", "Stomach", "Chest"]
         // Create a storage reference from our storage service
- 
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
     
 
     }
@@ -42,11 +47,15 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBAction func uploadWorkout(_ sender: Any) {
         
         print("UPLOAD CALLED")
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+
         var title = self.workoutName.text
         var muscleGroups = self.selectedMuscles.text
         var description = self.workoutDescription.text
-        var coach = Auth.auth().currentUser?.displayName
-        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "Description":description, "coach": coach]
+        var coach = Auth.auth().currentUser?.uid
+        var photoURL = Storage.storage().reference(withPath: "Workout/\(uid)/\(String(describing: self.workoutName.text))").fullPath
+        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "description":description, "coach": coach, "photoURL": photoURL]
+        
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
         ref = db.collection("Workouts").addDocument(data: workout) { err in
@@ -79,7 +88,10 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
 
     }
     
-   
+    @IBAction func submitPhoto(_ sender: Any) {
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
     
     @objc func onDoneButtonTapped() {
         toolBar.removeFromSuperview()
@@ -103,4 +115,80 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(muscleGroups[row])
     }
+    
+    func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?)->())) {
+        guard let uid = Auth.auth().currentUser?.uid else { return}
+        let storageRef = Storage.storage().reference().child("Workout/\(uid)/\(String(describing: self.workoutName.text))")
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else {return}
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpeg"
+        let uploadTask = storageRef.putData(imageData, metadata: metaData) { (metadata, error) in
+          guard let metadata = metadata else {
+            // Uh-oh, an error occurred!
+            return
+          }
+          // Metadata contains file metadata such as size, content-type.
+          let size = metadata.size
+          // You can also access to download URL after upload.
+          storageRef.downloadURL { (url, error) in
+            guard let downloadURL = url else {
+              // Uh-oh, an error occurred!
+              return
+            }
+          }
+        }
+    }
+
+
+    func saveProfile(profileImageURL: URL, completion: @escaping ((_ success:Bool)->())) {
+           guard let uid = Auth.auth().currentUser?.uid else { return}
+           let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+           let userObject = ["photoURL": profileImageURL.absoluteString] as [String:Any]
+           databaseRef.setValue(userObject) { error, ref in
+               completion(error == nil)
+           }
+           
+       }
+    
+    
+    
+}
+
+
+extension UploadViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    picker.dismiss(animated: true, completion: nil)
+}
+func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+        uploadProfileImage(pickedImage) { url in
+            if url != nil {
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.photoURL = url
+                
+                changeRequest?.commitChanges { error in
+                    if error == nil {
+                        print("User Profile Pic changed")
+                        self.saveProfile(profileImageURL: url!) { success in
+                            if success {
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                        
+                        }
+                    } else {
+                        print("error")
+                    }
+                }
+                
+            }
+            else {
+                
+            }
+            
+            
+        }
+        
+    }
+    picker.dismiss(animated: true, completion: nil)
+}
 }

@@ -590,6 +590,9 @@ Rating: 5/5</string>
                                 <rect key="frame" x="132" y="581" width="106" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="submit1.png"/>
+                                <connections>
+                                    <action selector="submitPhoto:" destination="oAy-hC-lcj" eventType="touchUpInside" id="caB-fi-6st"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-Ap-rdd">
                                 <rect key="frame" x="53" y="302" width="259" height="34"/>
