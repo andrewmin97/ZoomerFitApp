@@ -52,5 +52,191 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoomerFit/UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "UploadViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9 - 143c8068c49feace"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__deallocating_deinit"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9 - 83d7311af031b816"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZoomerFit.UploadViewController"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9 - ad960566d58203a7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZoomerFit.UploadViewController"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "397">
+               </Location>
+               <Location
+                  uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9 - e5b00feb79d15edf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZoomerFit.UploadViewController&gt;"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "02FF2A73-542C-4F54-8A14-9F3C7FE38CF9 - 8864565970f8dfd8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZoomerFit.UploadViewController&gt;"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "338">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4A6800D-486D-4689-ABD6-26877D560066"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZoomerFit/UploadViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "E4A6800D-486D-4689-ABD6-26877D560066 - 143c8068c49feace"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__deallocating_deinit"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "E4A6800D-486D-4689-ABD6-26877D560066 - 83d7311af031b816"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZoomerFit.UploadViewController"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "E4A6800D-486D-4689-ABD6-26877D560066 - ad960566d58203a7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ZoomerFit.UploadViewController"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "397">
+               </Location>
+               <Location
+                  uuid = "E4A6800D-486D-4689-ABD6-26877D560066 - e5b00feb79d15edf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZoomerFit.UploadViewController&gt;"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "E4A6800D-486D-4689-ABD6-26877D560066 - 8864565970f8dfd8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZoomerFit.UploadViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ZoomerFit.UploadViewController&gt;"
+                  moduleName = "ZoomerFit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryancho/Documents/GitHub/ZoomerFitApp/ZoomerFit/UploadViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "338">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
