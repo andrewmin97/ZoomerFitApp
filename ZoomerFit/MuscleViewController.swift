@@ -29,6 +29,23 @@ class MuscleViewController: UIViewController {
     @IBAction func chestButtonPressed(_ sender: Any) {
         muscleName = "Chest"
     }
+    
+    @IBAction func shouldersButtonTouched(_ sender: Any) {
+        muscleName = "Shoulders"
+    }
+    
+    @IBAction func legsButtonTouched(_ sender: Any) {
+        muscleName = "Legs"
+    }
+    
+    @IBAction func calvesButtonTouched(_ sender: Any) {
+        muscleName = "Calves"
+    }
+    
+    @IBAction func fullbodyButtonTouched(_ sender: Any) {
+        muscleName = "Full Body"
+    }
+    
     /*
     // MARK: - Navigation
 
