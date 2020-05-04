@@ -62,7 +62,7 @@ class WorkoutViewController: UIViewController {
         memoText!.layer.cornerRadius = 6;
         saveButton.isHidden = true;
         clearButton.isHidden = true;
-        segcontrolBar.isHidden = true;
+        segcontrolBar.isHidden = false;
     //description segue info
         let reference = Storage.storage().reference(withPath: workoutObject.imgURL)
         let placeholderImage = UIImage(named: "placeholder_profile.png")
