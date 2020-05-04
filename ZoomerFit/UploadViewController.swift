@@ -76,7 +76,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 print("Document added with ID: \(ref!.documentID)")
             }
         }
-        performSegue(withIdentifier: "toWorkout", sender: nil)
+        performSegue(withIdentifier: "toCategories", sender: nil)
         
     }
     
