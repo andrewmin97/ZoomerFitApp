@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class WorkoutViewController: UIViewController {
 //Seg bar
@@ -36,6 +37,7 @@ class WorkoutViewController: UIViewController {
         super.viewDidLoad()
         self.workoutName.text = workoutObject.title
         print(workoutObject.desc)
+        print(workoutObject.imgURL)
     //initialize to description
         //check for data in database.
         //if empty,
@@ -61,7 +63,10 @@ class WorkoutViewController: UIViewController {
         saveButton.isHidden = true;
         clearButton.isHidden = true;
     //description segue info
-        descriptionImage.image = UIImage (named: "arms.png"); //need to get image from database
+        let reference = Storage.storage().reference(withPath: workoutObject.imgURL)
+        let placeholderImage = UIImage(named: "placeholder_profile.png")
+        descriptionImage.sd_setImage(with: reference, placeholderImage: placeholderImage)
+
         descriptionLabel.numberOfLines = 0;
         //get text from database
         descriptionLabel.text = workoutObject.desc
