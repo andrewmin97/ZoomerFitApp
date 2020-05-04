@@ -15,6 +15,7 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView:UITableView!
     
     var backArray = [Health]()
+    var selectedWorkout = Health()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -157,14 +158,21 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 116
     }
     
-    /*
-    // MARK: - Navigation
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print(self.backArray[indexPath.row].title)
+            selectedWorkout = self.backArray[indexPath.row]
+            performSegue(withIdentifier: "toWorkout2", sender: nil) //your segue identifier here
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        }
+        
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    
+            // Create a variable that you want to send
+            let workout = selectedWorkout
+            // Create a new variable to store the instance of PlayerTableViewController
+            let destinationVC = segue.destination as! WorkoutViewController
+            destinationVC.workoutObject = workout
+        }
+            
 
 }
