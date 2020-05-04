@@ -413,7 +413,7 @@ Rating: 5/5</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sDq-Nw-pcB" kind="show" id="9Rj-cb-JXX"/>
+                                            <segue destination="sDq-Nw-pcB" kind="show" identifier="toWorkout2" id="9Rj-cb-JXX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -484,7 +484,6 @@ Rating: 5/5</string>
                                 <connections>
                                     <action selector="stomachButtonTouched:" destination="Mv1-MS-4UE" eventType="touchUpInside" id="QgZ-dj-uBJ"/>
                                     <segue destination="ncp-MA-roa" kind="show" id="gOd-2w-LmC"/>
-                            
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-cY-lDK">
@@ -676,7 +675,7 @@ Rating: 5/5</string>
                                     <fragment content="How are we getting better today?">
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -812,8 +811,8 @@ Rating: 5/5</string>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-i5-hhx">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEI-lN-Fo6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEI-lN-Fo6">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-8Z-Ntf">
                                                 <rect key="frame" x="81" y="155" width="110" height="42"/>
@@ -892,8 +891,8 @@ Rating: 5/5</string>
                                                     <constraint firstAttribute="width" constant="361" id="qFm-Lh-bIz"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-XB-kGl">
-                                                <rect key="frame" x="20" y="429" width="374" height="280"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-XB-kGl">
+                                                <rect key="frame" x="14" y="487" width="374" height="280"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="XhT-g9-k0i"/>
                                                 </constraints>
@@ -901,8 +900,8 @@ Rating: 5/5</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-GJ-7Sf">
-                                                <rect key="frame" x="20" y="21" width="374" height="32"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-GJ-7Sf">
+                                                <rect key="frame" x="20" y="93" width="374" height="32"/>
                                                 <segments>
                                                     <segment title="Description"/>
                                                     <segment title="Set 1"/>
@@ -928,6 +927,13 @@ Rating: 5/5</string>
                                             <constraint firstItem="rNT-VH-klO" firstAttribute="leading" secondItem="xEI-lN-Fo6" secondAttribute="leading" constant="20" id="tIY-QM-dP6"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvE-wc-Wsv">
+                                        <rect key="frame" x="156" y="15" width="102" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xEI-lN-Fo6" firstAttribute="bottom" secondItem="VUs-zb-u5P" secondAttribute="bottom" id="Jbk-9I-8xD"/>
@@ -955,6 +961,7 @@ Rating: 5/5</string>
                     <navigationItem key="navigationItem" id="gue-LT-13N"/>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
+                        <outlet property="WorkoutName" destination="VvE-wc-Wsv" id="TvA-eC-Ktm"/>
                         <outlet property="clearButton" destination="DVe-0H-7co" id="bD9-YW-Cye"/>
                         <outlet property="descriptionImage" destination="rNT-VH-klO" id="18y-aV-34A"/>
                         <outlet property="descriptionLabel" destination="Cr4-XB-kGl" id="ARF-3R-oiP"/>
@@ -972,7 +979,7 @@ Rating: 5/5</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOm-Ag-uis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2570" y="3453"/>
+            <point key="canvasLocation" x="-2571.0144927536235" y="3452.6785714285711"/>
         </scene>
         <!--Search-->
         <scene sceneID="Ic9-O5-taf">
@@ -1014,7 +1021,7 @@ Rating: 5/5</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mhj-Wy-6ck"/>
+        <segue reference="9Rj-cb-JXX"/>
         <segue reference="Y4i-ks-bVW"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1051,9 +1058,4 @@ Rating: 5/5</string>
         <image name="trainer.png" width="546" height="467"/>
         <image name="zoomer login background.png" width="274.55999755859375" height="540"/>
     </resources>
-
-    <inferredMetricsTieBreakers>
-        <segue reference="Mhj-Wy-6ck"/>
-        <segue reference="WJi-Ep-AVA"/>
-    </inferredMetricsTieBreakers>
 </document>
