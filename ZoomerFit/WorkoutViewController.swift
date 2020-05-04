@@ -35,7 +35,7 @@ class WorkoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.workoutName.text = workoutObject.title
-        print(workoutObject.title)
+        print(workoutObject.desc)
     //initialize to description
         //check for data in database.
         //if empty,
@@ -64,7 +64,7 @@ class WorkoutViewController: UIViewController {
         descriptionImage.image = UIImage (named: "arms.png"); //need to get image from database
         descriptionLabel.numberOfLines = 0;
         //get text from database
-        descriptionLabel.text = "asdjhshjghvjgeshvgsehvjgshjvegvhawjehgfvahsgdvfahgfvMSHADbvEHGfvHSEGvfHSGEvfhGEfhmSGEFvmhSGEvfhsmgfvMSHBDvfHEGSfMSHDB vmEGHSfMSVHDvfehgmsfMSBDvfmHSGEfcmHDGfvHMGSEfgeHGHghcFEGCFgcfefjnsjskgsrbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjgrsbbggksjrbgksjrbksjgbksrjgbksjrbgksjasdjhshjghvjgeshvgsehvjgshjvegvhawjehgfvahsgdvfahgfvMSHADbvEHGfvHSEGvfHSGEvfhGEfhmSGEFvmhSGEvfhsmgfvMSHBDvfHEGSfMSHDB vmEGHSfMSVHDvfehgmsfMSBDvfmHSGEfcmHDGfvHMGSEfgeHGHghcFEGCFgcfefjnsjskgsrbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjgrsbbggksjrbgksjrbksjgbksrjgbksjrbgksjasdjhshjghvjgeshvgsehvjgshjvegvhawjehgfvahsgdvfahgfvMSHADbvEHGfvHSEGvfHSGEvfhGEfhmSGEFvmhSGEvfhsmgfvMSHBDvfHEGSfMSHDB vmEGHSfMSVHDv fehgmsfMSBDvfmHSGEfcmHDGfvHMGSEfgeHGHghcFEGCFgcfefjnsjskgsrbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjgrsbbggksjrbgksjrbksjgbksrjgbksjrbgksjasdjhshjghvjgeshvgsehvjgshjvegvhawjehgfvahsgdvfahgfvMSHADbvEHGfvHSEGvfHSGEvfhGEfhmSGEFvmhSGEvfhsmgfvMSHBDvfHEGSfMSHDB vmEGHSfMSVHDv fehgmsfMSBDvfmHSGEfcmHDGfvHMGSEfgeHGHghcFEGCFgcfefjnsjskgsrbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjkgrsbjgrsbbggksjrbgksjrbksjgbksrjgbksjrbgksj"
+        descriptionLabel.text = workoutObject.desc
         // Do any additional setup after loading the view.
     }
     

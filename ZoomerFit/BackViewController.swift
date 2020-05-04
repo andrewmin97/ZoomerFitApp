@@ -165,8 +165,7 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         }
         
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             // Create a variable that you want to send
             let workout = selectedWorkout
             // Create a new variable to store the instance of PlayerTableViewController
