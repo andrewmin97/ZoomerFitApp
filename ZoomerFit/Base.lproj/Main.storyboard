@@ -251,7 +251,7 @@ Rating: 5/5</string>
                                 <rect key="frame" x="64" y="95" width="287" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="WelcomeLabel" label="WelcomeLabel"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -266,7 +266,7 @@ Rating: 5/5</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHl-S7-9wx">
                                 <rect key="frame" x="63" y="213" width="79" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
