@@ -61,6 +61,7 @@
 		846C73B4245F057600456B5F /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C73B3245F057600456B5F /* BackViewController.swift */; };
 		846C73BF245F694600456B5F /* arms.png in Resources */ = {isa = PBXBuildFile; fileRef = 846C73BD245F694500456B5F /* arms.png */; };
 		846C73C0245F694600456B5F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 846C73BE245F694600456B5F /* back.png */; };
+		8481E34F24608B99009102C5 /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481E34E24608B99009102C5 /* launchscreen.png */; };
 		84BDA530245D523500956E3B /* blueCircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDA52F245D523500956E3B /* blueCircleButton.png */; };
 		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
 		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
@@ -150,6 +151,7 @@
 		846C73B3245F057600456B5F /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
 		846C73BD245F694500456B5F /* arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arms.png; sourceTree = "<group>"; };
 		846C73BE245F694600456B5F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		8481E34E24608B99009102C5 /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
 		84BDA52F245D523500956E3B /* blueCircleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCircleButton.png; sourceTree = "<group>"; };
 		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 		06741DB4245A1F74009C5A26 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				8481E34E24608B99009102C5 /* launchscreen.png */,
 				06741DD5245AB67F009C5A26 /* Profile Page */,
 				06741DC4245A2402009C5A26 /* Nav Icons */,
 				06741DC3245A23F1009C5A26 /* Welcome Screen */,
@@ -506,6 +509,7 @@
 				06741DAA245A1EE7009C5A26 /* OtherIconGrey.png in Resources */,
 				06741DC1245A23B9009C5A26 /* popularitychart.png in Resources */,
 				06741D652456286B009C5A26 /* Main.storyboard in Resources */,
+				8481E34F24608B99009102C5 /* launchscreen.png in Resources */,
 				06741D9824562953009C5A26 /* Muscle group screen.png in Resources */,
 				06741DAB245A1EE7009C5A26 /* ProfileIconBlack.png in Resources */,
 				846C73C0245F694600456B5F /* back.png in Resources */,
