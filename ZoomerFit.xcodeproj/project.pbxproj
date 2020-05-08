@@ -44,6 +44,7 @@
 		06741DE5245AC1C8009C5A26 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06741DE4245AC1C8009C5A26 /* UploadViewController.swift */; };
 		06816D66245E65BA0023E796 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06816D65245E65BA0023E796 /* WorkoutViewController.swift */; };
 		06816D6C245F5CA60023E796 /* MuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06816D6B245F5CA60023E796 /* MuscleViewController.swift */; };
+		06ACA7AE2465151B00081959 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACA7AD2465151B00081959 /* HomeCollectionViewCell.swift */; };
 		399199F424567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F524567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
 		399199F624567B330098A184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399199F324567B330098A184 /* GoogleService-Info.plist */; };
@@ -66,7 +67,6 @@
 		84B0299C2464F7470038EF56 /* CoachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0299B2464F7470038EF56 /* CoachDetailViewController.swift */; };
 		84BDA530245D523500956E3B /* blueCircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDA52F245D523500956E3B /* blueCircleButton.png */; };
 		84BFD944246502D60073637F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFD941246502D60073637F /* Home.swift */; };
-		84BFD9462465081D0073637F /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFD9452465081D0073637F /* HomeCollectionViewCell.swift */; };
 		B72C98E4F03DF08EB10369FB /* Pods_ZoomerFit_ZoomerFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */; };
 		CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */; };
 		D14F3EC86A05A1B40501B85B /* Pods_ZoomerFitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */; };
@@ -134,6 +134,7 @@
 		06741DE4245AC1C8009C5A26 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		06816D65245E65BA0023E796 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		06816D6B245F5CA60023E796 /* MuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewController.swift; sourceTree = "<group>"; };
+		06ACA7AD2465151B00081959 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD77E46D5271AD09BC38F0 /* Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		264B1BEDA93BEA47F3245E4F /* Pods-ZoomerFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit/Pods-ZoomerFit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		84B0299B2464F7470038EF56 /* CoachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDetailViewController.swift; sourceTree = "<group>"; };
 		84BDA52F245D523500956E3B /* blueCircleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCircleButton.png; sourceTree = "<group>"; };
 		84BFD941246502D60073637F /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		84BFD9452465081D0073637F /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewCell.swift; path = ../../../../Desktop/HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit_ZoomerFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomerFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E969D14A8D6757899774ECAC /* Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomerFit-ZoomerFitUITests/Pods-ZoomerFit-ZoomerFitUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 				06816D65245E65BA0023E796 /* WorkoutViewController.swift */,
 				846C73B3245F057600456B5F /* BackViewController.swift */,
 				84B029992464EBDB0038EF56 /* CoachViewController.swift */,
-				84BFD9452465081D0073637F /* HomeCollectionViewCell.swift */,
+				06ACA7AD2465151B00081959 /* HomeCollectionViewCell.swift */,
 				84B0299B2464F7470038EF56 /* CoachDetailViewController.swift */,
 				846C73B1245F053000456B5F /* Health.swift */,
 				84BFD941246502D60073637F /* Home.swift */,
@@ -701,7 +701,7 @@
 				06816D66245E65BA0023E796 /* WorkoutViewController.swift in Sources */,
 				84BFD944246502D60073637F /* Home.swift in Sources */,
 				06741DE3245AC1B5009C5A26 /* UserProfileViewController.swift in Sources */,
-				84BFD9462465081D0073637F /* HomeCollectionViewCell.swift in Sources */,
+				06ACA7AE2465151B00081959 /* HomeCollectionViewCell.swift in Sources */,
 				84B0299A2464EBDB0038EF56 /* CoachViewController.swift in Sources */,
 				06741D622456286B009C5A26 /* SignInViewController.swift in Sources */,
 				06741DCD245A8DF6009C5A26 /* WelcomeViewController.swift in Sources */,
