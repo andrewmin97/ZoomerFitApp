@@ -13,7 +13,7 @@ class CoachViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView:UITableView!
     
-    var coachArray = [String]()
+    var coachArray: [Dictionary<String, String>] = []
     
     var selectedCoach = ""
 
@@ -58,8 +58,9 @@ class CoachViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     let documentData = document.data()
                     
                     
-                    let coach = documentData["coachName"] as! String
-                    
+                    let coachName = documentData["coachName"] as! String
+                    let coachUID = documentData["coach"] as! String
+                    let coach = ["coachName": coachName, "coachUID": coachUID]
                     var bool = false
                     
                     for i in 0 ..< self.coachArray.count
@@ -94,12 +95,13 @@ class CoachViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell", for: indexPath)
         
         let coachLabel = cell.viewWithTag(1) as! UILabel
-        coachLabel.text = coachArray[indexPath.row]
+        coachLabel.text = coachArray[indexPath.row]["coachName"]
         
         let imageView = cell.viewWithTag(2) as! UIImageView
         
-        let coachUID = coachArray[indexPath.row]
+        let coachUID:String = coachArray[indexPath.row]["coachUID"]!
         
+    
         let reference = Storage.storage().reference(withPath: "user/\(coachUID)")
         reference.getData(maxSize: (10 * 1024 * 1024)) { (data, error) in
             if let _error = error{
@@ -122,7 +124,7 @@ class CoachViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedCoach = coachArray[indexPath.row]
+        selectedCoach = coachArray[indexPath.row]["coachName"]!
         
         performSegue(withIdentifier: "goToDetail", sender: self)
     }
