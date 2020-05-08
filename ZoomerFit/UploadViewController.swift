@@ -20,7 +20,8 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var submitImage: UIButton!
     
     @IBOutlet weak var selectedMuscles: UITextField!
-    @IBOutlet weak var submitVideo: UIButton!
+    
+    //@IBOutlet weak var submitVideo: UIButton!
     
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var muscleSelector: UIPickerView!
