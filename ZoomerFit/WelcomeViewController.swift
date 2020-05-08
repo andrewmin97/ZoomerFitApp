@@ -9,7 +9,7 @@
 
 import UIKit
 
-class WelcomeViewController : UIViewController
+class WelcomeViewController : UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
 {
     @IBOutlet weak var collectionView: UICollectionView!
     var home = Home.fetchHome()
@@ -17,8 +17,16 @@ class WelcomeViewController : UIViewController
     override func viewDidLoad() {
         
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                                layout collectionViewLayout: UICollectionViewLayout,
+                                sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+      return CGSize(width: 200, height: 400)
+     
+    }
 }
 
 extension WelcomeViewController: UICollectionViewDataSource
@@ -39,11 +47,5 @@ extension WelcomeViewController: UICollectionViewDataSource
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                                layout collectionViewLayout: UICollectionViewLayout,
-                                sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-      return CGSize(width: 200, height: 400)
-     
-    }
+    
 }
