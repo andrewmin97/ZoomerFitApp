@@ -64,8 +64,9 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         var muscleGroups = self.selectedMuscles.text
         var description = self.workoutDescription.text
         var coach = Auth.auth().currentUser?.uid
+        var coachName = Auth.auth().currentUser?.displayName
         var photoURL = Storage.storage().reference(withPath: "Workout/\(uid)/\(String(describing: self.workoutName.text))").fullPath
-        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "description":description, "coach": coach, "photoURL": photoURL]
+        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "description":description, "coach": coach, "coachName": coachName, "photoURL": photoURL]
         
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil

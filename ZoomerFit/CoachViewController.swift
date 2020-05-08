@@ -57,7 +57,8 @@ class CoachViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     
                     let documentData = document.data()
                     
-                    let coach = documentData["coach"] as! String
+                    
+                    let coach = documentData["coachName"] as! String
                     
                     var bool = false
                     
