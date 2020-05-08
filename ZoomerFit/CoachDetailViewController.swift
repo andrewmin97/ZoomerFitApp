@@ -39,7 +39,7 @@ class CoachDetailViewController: UIViewController, UITableViewDelegate, UITableV
     {
         let db = Firestore.firestore()
         
-        db.collection("Workouts").whereField("coach", isEqualTo: selectedCoach).getDocuments { (snapshot, error) in
+        db.collection("Workouts").whereField("coachName", isEqualTo: selectedCoach).getDocuments { (snapshot, error) in
             
             if error != nil || snapshot == nil
             {
