@@ -6,34 +6,44 @@
 //  Copyright © 2020 Andrew Kang. All rights reserved.
 //
 
+
 import UIKit
 
-class WelcomeViewController: UIViewController {
-
-    @IBOutlet var welcomeLabel: UILabel!
-    @IBOutlet weak var eventImage: UIImageView!
-    
-    @IBOutlet weak var popularityChart: UIImageView!
+class WelcomeViewController : UIViewController
+{
+    @IBOutlet weak var collectionView: UICollectionView!
+    var home = Home.fetchHome()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-       // eventImage.image = UIImage (named: "carousel1.png")
         
-     //   popularityChart.image = UIImage(named: "popularitychart.png")
-//        
-        //self.welcomeLabel.text = "Welcome!"
-        
-        // Do any additional setup after loading the view.
+        collectionView.dataSource = self
     }
     
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension WelcomeViewController: UICollectionViewDataSource
+{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return home.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
+        let hom = home[indexPath.item]
+        
+        cell.home = hom
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                                layout collectionViewLayout: UICollectionViewLayout,
+                                sizeForItemAt indexPath: IndexPath) -> CGSize {
 
+      return CGSize(width: 200, height: 400)
+     
+    }
 }
