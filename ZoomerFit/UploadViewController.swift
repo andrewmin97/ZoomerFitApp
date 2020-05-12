@@ -39,6 +39,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Get a reference to the storage service using the default Firebase App
         let storage = Storage.storage()
         self.photoSuccess.isHidden = true
+    //make frames for text boxes
         workoutDescription!.layer.borderWidth = 1;
         workoutDescription!.layer.borderColor = UIColor.lightGray.cgColor;
         workoutDescription!.layer.cornerRadius = 6;
@@ -58,6 +59,20 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         equipment!.layer.borderWidth = 1;
         equipment!.layer.borderColor = UIColor.lightGray.cgColor;
         equipment!.layer.cornerRadius = 6;
+    //initialize text inside textboxes to default text
+//        workoutLength.textColor = .gray;
+       workoutName.textColor = .black;
+//        workoutDescription.textColor = .gray;
+//        detailedDescription.textColor = .gray;
+//        equipment.textColor = .gray;
+        workoutLength.text = "e.g. 4 minutes";
+        workoutName.text = "e.g. Arnold Press";
+        workoutDescription.text = "e.g. This workout targets all three heads of the deltoid";
+        detailedDescription.text = "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+";
+        equipment.text = "e.g. 2 25 lb Dumbells";
+
+        
+        
         
         muscleGroups = ["Back", "Arms", "Stomach", "Chest", "Shoulders", "Legs", "Calves", "Full Body"]
         // Create a storage reference from our storage service
@@ -69,14 +84,43 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         //warningText.isHidden = true
 
     }
-    
+//    @IBAction func selectedEquipment(_ sender: Any) {
+//    if(equipment.text == "e.g. 2 25 lb Dumbells"){
+//        equipment.text = "";
+//    }
+//    }
+//
+//    @IBAction func selectedShortDesc(_ sender: Any) {
+//        if(workoutDescription.text == "e.g. This workout targets all three heads of the deltoid"){
+//            workoutDescription.text = "";
+//        }
+//    }
+//
+//    @IBAction func selectedTitle(_ sender: Any) {
+//        if(workoutName.text == "e.g. Arnold Press"){
+//            workoutName.text = "";
+//        }
+//        workoutName.textColor = .black;
+//    }
+//    @IBAction func selectedLength(_ sender: Any) {
+//        if(workoutLength.text == "e.g. 4 minutes"){
+//            workoutLength.text = "";
+//        }
+//    }
+//    @IBAction func selectedDetailedDesc(_ sender: Any) {
+//        if(detailedDescription.text == "e.g. Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+"){
+//            detailedDescription.text = "";
+//        }
+//    }
     
     @IBAction func uploadWorkout(_ sender: Any) {
         
-        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
+//        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
+        if((workoutDescription.text == "e.g. This workout targets all three heads of the deltoid" && !workoutDescription.text.isEmpty) || (workoutName.text == "e.g. Arnold Press") || (selectedMuscles.text == "") || (workoutLength.text == "e.g. 4 minutes") || (detailedDescription.text == "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+") || (equipment.text == "e.g. 2 25 lb Dumbells")) {
             //warningText.isHidden = false
             return
         }
+        
         
         print("UPLOAD CALLED")
         guard let uid = Auth.auth().currentUser?.uid else { return}
