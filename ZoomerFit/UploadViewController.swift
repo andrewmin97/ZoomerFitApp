@@ -39,6 +39,26 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Get a reference to the storage service using the default Firebase App
         let storage = Storage.storage()
         self.photoSuccess.isHidden = true
+        workoutDescription!.layer.borderWidth = 1;
+        workoutDescription!.layer.borderColor = UIColor.lightGray.cgColor;
+        workoutDescription!.layer.cornerRadius = 6;
+        
+        workoutName!.layer.borderWidth = 1;
+        workoutName!.layer.borderColor = UIColor.lightGray.cgColor;
+        workoutName!.layer.cornerRadius = 6;
+        
+        workoutLength!.layer.borderWidth = 1;
+        workoutLength!.layer.borderColor = UIColor.lightGray.cgColor;
+        workoutLength!.layer.cornerRadius = 6;
+        
+        detailedDescription!.layer.borderWidth = 1;
+        detailedDescription!.layer.borderColor = UIColor.lightGray.cgColor;
+        detailedDescription!.layer.cornerRadius = 6;
+        
+        equipment!.layer.borderWidth = 1;
+        equipment!.layer.borderColor = UIColor.lightGray.cgColor;
+        equipment!.layer.cornerRadius = 6;
+        
         muscleGroups = ["Back", "Arms", "Stomach", "Chest", "Shoulders", "Legs", "Calves", "Full Body"]
         // Create a storage reference from our storage service
         imagePicker = UIImagePickerController()
