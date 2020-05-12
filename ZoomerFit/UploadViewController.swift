@@ -46,7 +46,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = ["public.image", "public.movie"]
         imagePicker.delegate = self
-        warningText.isHidden = true
+        //warningText.isHidden = true
 
     }
     
@@ -54,7 +54,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBAction func uploadWorkout(_ sender: Any) {
         
         if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
-            warningText.isHidden = false
+            //warningText.isHidden = false
             return
         }
         
