@@ -16,7 +16,10 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var photoSuccess: UILabel!
     @IBOutlet weak var workoutDescription: UITextView!
     @IBOutlet weak var workoutName: UITextField!
+    @IBOutlet weak var workoutLength: UITextView!
     
+    @IBOutlet weak var detailedDescription: UITextView!
+    @IBOutlet weak var equipment: UITextView!
     @IBOutlet weak var submitImage: UIButton!
     
     @IBOutlet weak var selectedMuscles: UITextField!
@@ -49,9 +52,6 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     
     @IBAction func uploadWorkout(_ sender: Any) {
-        print(workoutDescription.text)
-        print(workoutName.text)
-        print(selectedMuscles.text)
         
         if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
             warningText.isHidden = false
@@ -61,13 +61,16 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         print("UPLOAD CALLED")
         guard let uid = Auth.auth().currentUser?.uid else { return}
 
-        var title = self.workoutName.text
-        var muscleGroups = self.selectedMuscles.text
-        var description = self.workoutDescription.text
-        var coach = Auth.auth().currentUser?.uid
-        var coachName = Auth.auth().currentUser?.displayName
-        var photoURL = Storage.storage().reference(withPath: "Workout/\(uid)/\(String(describing: self.workoutName.text))").fullPath
-        var workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "description":description, "coach": coach, "coachName": coachName, "photoURL": photoURL]
+        let title = self.workoutName.text
+        let muscleGroups = self.selectedMuscles.text
+        let description = self.workoutDescription.text
+        let detailed = self.detailedDescription.text
+        let workoutLength = self.workoutLength.text
+        let equipmentNeeded = self.equipment.text
+        let coach = Auth.auth().currentUser?.uid
+        let coachName = Auth.auth().currentUser?.displayName
+        let photoURL = Storage.storage().reference(withPath: "Workout/\(uid)/\(String(describing: self.workoutName.text))").fullPath
+        let workout:[String:String?] = ["title": title, "muscleGroups": muscleGroups, "description":description, "detailedDescription": detailed, "workoutLength":workoutLength, "equipment": equipmentNeeded, "coach": coach, "coachName": coachName, "photoURL": photoURL]
         
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
