@@ -16,4 +16,7 @@ class Health: NSObject {
     var muscleGroup: String = ""
     var videoURL: String = ""
     var coach: String = ""
+    var detailed: String = ""
+    var equipment: String = ""
+    var length: String = ""
 }
