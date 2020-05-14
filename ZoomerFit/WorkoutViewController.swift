@@ -14,18 +14,21 @@ class WorkoutViewController: UIViewController {
     
     @IBOutlet weak var segcontrolBar: UISegmentedControl!
 //Display for Sets
-    @IBOutlet weak var weightLabel: UILabel!
-    @IBOutlet weak var weightText: UITextField!
-    @IBOutlet weak var repLabel: UILabel!
-    @IBOutlet weak var repText: UITextField!
+
+    @IBOutlet weak var equipmentHeaderLabel: UILabel!
+    
+    @IBOutlet weak var equipmentLabel: UILabel!
+    
+    @IBOutlet weak var durationHeaderLabel: UILabel!
+   
     @IBOutlet weak var durationLabel: UILabel!
-    @IBOutlet weak var durationText: UITextField!
-    @IBOutlet weak var memoLabel: UILabel!
-    @IBOutlet weak var memoText: UITextView!
-//Buttons
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var clearButton: UIButton!
-//Display for Description
+    
+    @IBOutlet weak var detailsHeaderLabel: UILabel!
+    
+    @IBOutlet weak var detailsLabel: UILabel!
+    
+    
+    //Display for Description
     @IBOutlet weak var descriptionImage: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var workoutName: UILabel!
@@ -36,32 +39,29 @@ class WorkoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.workoutName.text = workoutObject.title
-        print(workoutObject.desc)
-        print(workoutObject.imgURL)
-    //initialize to description
-        //check for data in database.
-        //if empty,
-        memoText.text = "Write down any notes for yourself here!";
-        memoText.textColor = UIColor.lightGray;
-    //these should be pulled from database
-        //weightText.text = "";
-        //repText.text = "";
-        //durationText.text = "";
-        segcontrolBar.selectedSegmentIndex = 0
+
+ segcontrolBar.selectedSegmentIndex = 0
     //hide set info
-        weightLabel.isHidden = true;
-        weightText.isHidden = true;
-        repLabel.isHidden = true;
-        repText.isHidden = true;
+        equipmentLabel.isHidden = true;
+        equipmentHeaderLabel.isHidden = true;
+        equipmentLabel!.layer.cornerRadius = 6;
+        equipmentLabel!.layer.borderColor = UIColor.black.cgColor;
+        equipmentLabel!.layer.borderWidth = 1;
+        durationHeaderLabel.isHidden = true;
         durationLabel.isHidden = true;
-        durationText.isHidden = true;
-        memoLabel.isHidden = true;
-        memoText.isHidden = true;
-        memoText!.layer.borderWidth = 1;
-        memoText!.layer.borderColor = UIColor.black.cgColor;
-        memoText!.layer.cornerRadius = 6;
-        saveButton.isHidden = true;
-        clearButton.isHidden = true;
+        durationLabel!.layer.cornerRadius = 6;
+        durationLabel!.layer.borderColor = UIColor.black.cgColor;
+        durationLabel!.layer.borderWidth = 1;
+        detailsHeaderLabel.isHidden = true;
+        detailsLabel.isHidden = true;
+        detailsLabel!.layer.cornerRadius = 6;
+        detailsLabel!.layer.borderColor = UIColor.black.cgColor;
+        detailsLabel!.layer.borderWidth = 1;
+
+        //memoText!.layer.borderWidth = 1;
+        //memoText!.layer.borderColor = UIColor.black.cgColor;
+        //memoText!.layer.cornerRadius = 6;
+
         segcontrolBar.isHidden = false;
     //description segue info
         let reference = Storage.storage().reference(withPath: workoutObject.imgURL)
@@ -70,7 +70,11 @@ class WorkoutViewController: UIViewController {
 
         descriptionLabel.numberOfLines = 0;
         //get text from database
-        descriptionLabel.text = workoutObject.desc
+        descriptionLabel.text = workoutObject.desc;
+        detailsLabel.text = workoutObject.detailed;
+        equipmentLabel.text = workoutObject.equipment;
+        durationLabel.text = workoutObject.length;
+        
         // Do any additional setup after loading the view.
     }
     
@@ -80,85 +84,47 @@ class WorkoutViewController: UIViewController {
         if (segcontrolBar.selectedSegmentIndex == 0){
             descriptionImage.isHidden = false;
             descriptionLabel.isHidden = false;
-            weightLabel.isHidden = true;
-            weightText.isHidden = true;
-            repLabel.isHidden = true;
-            repText.isHidden = true;
+           
+            equipmentHeaderLabel.isHidden = true;
+            equipmentLabel.isHidden = true;
+            durationHeaderLabel.isHidden = true;
             durationLabel.isHidden = true;
-            durationText.isHidden = true;
-            memoLabel.isHidden = true;
-            memoText.isHidden = true;
-            saveButton.isHidden = true;
-            clearButton.isHidden = true;
+            detailsHeaderLabel.isHidden = true;
+            detailsLabel.isHidden = true;
+
         } //outside seg 0
         else if (segcontrolBar.selectedSegmentIndex == 1){
-                //check for data in database.
-                //if empty,
-                memoText.text = "Write down any notes for yourself here!";
-                memoText.textColor = UIColor.lightGray;
-            //these should be pulled from database
-                //weightText.text = "";
-                //repText.text = "";
-                //durationText.text = "";
-            
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
-            weightLabel.isHidden = false;
-            weightText.isHidden = false;
-            repLabel.isHidden = false;
-            repText.isHidden = false;
+            equipmentHeaderLabel.isHidden = false;
+            equipmentLabel.isHidden = false;
+            durationHeaderLabel.isHidden = false;
             durationLabel.isHidden = false;
-            durationText.isHidden = false;
-            memoLabel.isHidden = false;
-            memoText.isHidden = false;
-            saveButton.isHidden = false;
-            clearButton.isHidden = false;
+            detailsHeaderLabel.isHidden = false;
+            detailsLabel.isHidden = false;
         }//outside seg 1
+            
         else if (segcontrolBar.selectedSegmentIndex == 2){
-                //check for data in database.
-                //if empty,
-                memoText.text = "Write down any notes for yourself here!";
-                memoText.textColor = UIColor.lightGray;
-            //these should be pulled from database
-                //weightText.text = "";
-                //repText.text = "";
-                //durationText.text = "";
-            
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
-            weightLabel.isHidden = false;
-            weightText.isHidden = false;
-            repLabel.isHidden = false;
-            repText.isHidden = false;
+            equipmentHeaderLabel.isHidden = false;
+            equipmentLabel.isHidden = false;
+            durationHeaderLabel.isHidden = false;
             durationLabel.isHidden = false;
-            durationText.isHidden = false;
-            memoLabel.isHidden = false;
-            memoText.isHidden = false;
-            saveButton.isHidden = false;
-            clearButton.isHidden = false;
+            detailsHeaderLabel.isHidden = false;
+            detailsLabel.isHidden = false;
         }//outside seg 2
-        else if (segcontrolBar.selectedSegmentIndex == 3){
-                //check for data in database.
-                //if empty,
-                memoText.text = "Write down any notes for yourself here!";
-                memoText.textColor = UIColor.lightGray;
-            //these should be pulled from database
-                //weightText.text = "";
-                //repText.text = "";
-                //durationText.text = "";
             
+        else if (segcontrolBar.selectedSegmentIndex == 3){
             descriptionImage.isHidden = true;
             descriptionLabel.isHidden = true;
-            weightLabel.isHidden = false;
-            weightText.isHidden = false;
-            repLabel.isHidden = false;
-            repText.isHidden = false;
+            equipmentHeaderLabel.isHidden = false;
+            equipmentLabel.isHidden = false;
+            durationHeaderLabel.isHidden = false;
             durationLabel.isHidden = false;
-            durationText.isHidden = false;
-            memoLabel.isHidden = false;
-            memoText.isHidden = false;
-            saveButton.isHidden = false;
-            clearButton.isHidden = false;
+            detailsHeaderLabel.isHidden = false;
+            detailsLabel.isHidden = false;
+
         }
     }
     
@@ -166,19 +132,6 @@ class WorkoutViewController: UIViewController {
         self.navigationController?.popViewController(animated: true);
     }
     
-    
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        //this should save all data in current textboxes to array of corresponding seg
-        
-        
-    }
-    
-    @IBAction func clearButtonPressed(_ sender: Any) {
-        weightText.text = "";
-        repText.text = "";
-        durationText.text = "";
-        memoText.text = "";
-    }
     /*
     // MARK: - Navigation
 

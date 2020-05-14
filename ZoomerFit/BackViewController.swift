@@ -65,12 +65,29 @@ class BackViewController: UIViewController, UITableViewDelegate, UITableViewData
                     health1.desc = documentData["description"] as! String
                     health1.muscleGroup = documentData["muscleGroups"] as! String
                     health1.imgURL = documentData["photoURL"] as! String
-                    
+                    if((documentData["detailedDescription"]) != nil){
+                        health1.detailed =  documentData["detailedDescription"] as! String
+                    }
+                    else{
+                        health1.detailed = "Not given";
+                    }
+                    if((documentData["equipment"]) != nil){
+                        health1.equipment =  documentData["equipment"] as! String
+                    }
+                    else{
+                        health1.equipment = "Not given";
+                    }
+                    if((documentData["workoutLength"]) != nil){
+                        health1.length =  documentData["workoutLength"] as! String
+                    }
+                    else{
+                        health1.length = "Not given";
+                    }
                     self.backArray.append(health1)
                     
 //                    self.backArray.append(documentData as NSDictionary)
                     
-                    print("documentData = ", documentData)
+
                 }
                 
                 self.tableView.reloadData()

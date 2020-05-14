@@ -115,8 +115,8 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBAction func uploadWorkout(_ sender: Any) {
         
-//        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
-        if((workoutDescription.text == "e.g. This workout targets all three heads of the deltoid" && !workoutDescription.text.isEmpty) || (workoutName.text == "e.g. Arnold Press") || (selectedMuscles.text == "") || (workoutLength.text == "e.g. 4 minutes") || (detailedDescription.text == "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+") || (equipment.text == "e.g. 2 25 lb Dumbells")) {
+        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
+//        if((workoutDescription.text == "e.g. This workout targets all three heads of the deltoid" && !workoutDescription.text.isEmpty) || (workoutName.text == "e.g. Arnold Press") || (selectedMuscles.text == "") || (workoutLength.text == "e.g. 4 minutes") || (detailedDescription.text == "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+") || (equipment.text == "e.g. 2 25 lb Dumbells")) {
             //warningText.isHidden = false
             return
         }
