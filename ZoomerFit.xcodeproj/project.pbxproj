@@ -57,6 +57,8 @@
 		84044BB0245E033300B8394B /* shoulder.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BA9245E033100B8394B /* shoulder.png */; };
 		84044BB1245E033300B8394B /* calves.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BAA245E033200B8394B /* calves.png */; };
 		84044BB2245E033300B8394B /* legs.png in Resources */ = {isa = PBXBuildFile; fileRef = 84044BAB245E033200B8394B /* legs.png */; };
+		841F5CEE246F1DC30027E8A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F5CED246F1DC30027E8A5 /* AVFoundation.framework */; };
+		841F5CF0246F1EE00027E8A5 /* messenger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 841F5CEF246F1EE00027E8A5 /* messenger.mp3 */; };
 		846C73B2245F053000456B5F /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C73B1245F053000456B5F /* Health.swift */; };
 		846C73B4245F057600456B5F /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C73B3245F057600456B5F /* BackViewController.swift */; };
 		846C73BF245F694600456B5F /* arms.png in Resources */ = {isa = PBXBuildFile; fileRef = 846C73BD245F694500456B5F /* arms.png */; };
@@ -152,6 +154,8 @@
 		84044BA9245E033100B8394B /* shoulder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoulder.png; sourceTree = "<group>"; };
 		84044BAA245E033200B8394B /* calves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calves.png; sourceTree = "<group>"; };
 		84044BAB245E033200B8394B /* legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legs.png; sourceTree = "<group>"; };
+		841F5CED246F1DC30027E8A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		841F5CEF246F1EE00027E8A5 /* messenger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = messenger.mp3; sourceTree = "<group>"; };
 		846C73B1245F053000456B5F /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 		846C73B3245F057600456B5F /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
 		846C73BD245F694500456B5F /* arms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arms.png; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841F5CEE246F1DC30027E8A5 /* AVFoundation.framework in Frameworks */,
 				CAC50294EF283162B89EA1F5 /* Pods_ZoomerFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +246,7 @@
 				846C73B1245F053000456B5F /* Health.swift */,
 				84832E262465467200738456 /* HomeCollectionViewCell.swift */,
 				84BFD941246502D60073637F /* Home.swift */,
+				841F5CEF246F1EE00027E8A5 /* messenger.mp3 */,
 				06741D6624562870009C5A26 /* Assets.xcassets */,
 				06741D6824562870009C5A26 /* LaunchScreen.storyboard */,
 				06741D6B24562870009C5A26 /* Info.plist */,
@@ -376,6 +382,7 @@
 		5FBE7B61C3EA6DA286868CC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				841F5CED246F1DC30027E8A5 /* AVFoundation.framework */,
 				9DE2CBD6933BF73E71513C48 /* Pods_ZoomerFit.framework */,
 				88C10300762268299AD3DF48 /* Pods_ZoomerFit_ZoomerFitUITests.framework */,
 				1F2B4D5A86EA6F7F0F03FFD9 /* Pods_ZoomerFitTests.framework */,
@@ -500,6 +507,7 @@
 				84044BB1245E033300B8394B /* calves.png in Resources */,
 				06741DA024562962009C5A26 /* christianfleenor.jpg in Resources */,
 				399199F424567B330098A184 /* GoogleService-Info.plist in Resources */,
+				841F5CF0246F1EE00027E8A5 /* messenger.mp3 in Resources */,
 				84044B9D245DF05E00B8394B /* trainer.png in Resources */,
 				06741D9C2456295D009C5A26 /* clarkfit.jpg in Resources */,
 				06741D9D2456295D009C5A26 /* diamondcut.jpeg in Resources */,
