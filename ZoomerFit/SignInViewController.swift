@@ -11,8 +11,12 @@ import FirebaseUI
 import FBSDKLoginKit
 import Firebase
 import GoogleSignIn
+import AVFoundation
 
 class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
+    
+    
+    var musicEffect: AVAudioPlayer = AVAudioPlayer()
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,16 @@ class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
             firebaseFBLogin(accessToken: AccessToken.current!.tokenString)
         }
 
+        let musicFile = Bundle.main.path(forResource: "messenger", ofType: ".mp3")
+        
+        do{
+            try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))
+        }
+        
+        catch{
+            print(error)
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -71,6 +85,12 @@ class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
         authUI?.providers = [FUIEmailAuth(), FUIFacebookAuth(), FUIGoogleAuth()]
         let authViewController = authUI?.authViewController()
         present(authViewController!, animated: true, completion: nil)
+        
+        musicEffect.play()
+        
+        
+        
+        
     }
     
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
