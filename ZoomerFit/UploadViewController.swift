@@ -40,7 +40,8 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let storage = Storage.storage()
         self.photoSuccess.isHidden = true
     //make frames for text boxes
-        warningText.text = "Please fill all items. Leave no blanks.";
+        warningText.text = "Please fill all items with original content. Leave no blanks.";
+        warningText.font = warningText.font.withSize(10);
         warningText.textColor = .red;
         workoutDescription!.layer.borderWidth = 1;
         workoutDescription!.layer.borderColor = UIColor.lightGray.cgColor;
