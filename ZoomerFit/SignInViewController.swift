@@ -31,10 +31,10 @@ class ViewController: UIViewController, LoginButtonDelegate, FUIAuthDelegate {
             firebaseFBLogin(accessToken: AccessToken.current!.tokenString)
         }
 
-        let musicFile = Bundle.main.path(forResource: "messenger", ofType: ".mp3")
+        let soundFile = Bundle.main.path(forResource: "messenger", ofType: ".mp3")
         
         do{
-            try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))
+            try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: soundFile!))
         }
         
         catch{
