@@ -40,6 +40,8 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let storage = Storage.storage()
         self.photoSuccess.isHidden = true
     //make frames for text boxes
+        warningText.text = "Please fill all items. Leave no blanks.";
+        warningText.textColor = .red;
         workoutDescription!.layer.borderWidth = 1;
         workoutDescription!.layer.borderColor = UIColor.lightGray.cgColor;
         workoutDescription!.layer.cornerRadius = 6;
@@ -81,7 +83,7 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         imagePicker.sourceType = .photoLibrary
         imagePicker.mediaTypes = ["public.image", "public.movie"]
         imagePicker.delegate = self
-        //warningText.isHidden = true
+        warningText.isHidden = true
 
     }
 //    @IBAction func selectedEquipment(_ sender: Any) {
@@ -115,9 +117,9 @@ class UploadViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBAction func uploadWorkout(_ sender: Any) {
         
-        if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
-//        if((workoutDescription.text == "e.g. This workout targets all three heads of the deltoid" && !workoutDescription.text.isEmpty) || (workoutName.text == "e.g. Arnold Press") || (selectedMuscles.text == "") || (workoutLength.text == "e.g. 4 minutes") || (detailedDescription.text == "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+") || (equipment.text == "e.g. 2 25 lb Dumbells")) {
-            //warningText.isHidden = false
+        //if((workoutDescription.text == "How are we getting better today?" && !workoutDescription.text.isEmpty) || (workoutName.text == "") || (selectedMuscles.text == "")) {
+        if((workoutDescription.text == "e.g. This workout targets all three heads of the deltoid" && !workoutDescription.text.isEmpty) || (workoutName.text == "e.g. Arnold Press") || (selectedMuscles.text == "") || (workoutLength.text == "e.g. 4 minutes") || (detailedDescription.text == "e.g. \n Heavy Weight: 5-8 reps \n Moderate Weight: 10-12 reps \n Light Weight: 15-20+") || (equipment.text == "e.g. 2 25 lb Dumbells")) {
+            warningText.isHidden = false
             return
         }
         
